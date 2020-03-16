@@ -65,6 +65,11 @@ case (opcode) is
         when "10001" => SrcAout <= SrcAin - SrcBin; --SUB 
         when "10010" => SrcAout <= std_logic_vector(signed(SrcAin) * signed(SrcBin)); --MUL 
         when "10011" => SrcAout <= std_logic_vector(signed(SrcAin) / signed(SrcBin)); --DIV 
+        when "10100" => SrcAout <= srcAin AND srcBin; --and
+        when "10101" => SrcAout <= srcAin OR srcBin; --or
+        when "10110" => SrcAout <= srcAin XOR srcBin; --xor
+        when "10111" => SrcAout <= SrcAin + immed; --ADD immed
+        when "11000" => SrcAout <= SrcAin - immed; --SUB immed
         when others => SrcAout <= SrcAin;
 end case;
 
