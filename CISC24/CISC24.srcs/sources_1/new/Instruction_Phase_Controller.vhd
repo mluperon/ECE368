@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 03/16/2020 01:23:18 PM
+-- Create Date: 03/16/2020 05:25:47 PM
 -- Design Name: 
--- Module Name: Instruction_REG - Behavioral
+-- Module Name: Instruction_Phase_Controller - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -21,7 +21,7 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
+--use work.instruction_REG.all;
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --use IEEE.NUMERIC_STD.ALL;
@@ -31,16 +31,20 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity Instruction_REG is
-Port ( InstructionIN : in std_Logic_vector(23 downto 0);
-       InstructionOUT : out std_Logic_vector(23 downto 0));
-end Instruction_REG;
+entity Instruction_Phase_Controller is
+Port (  Fetch : in std_logic_vector(23 downto 0);
+        Write : out std_logic_vector(23 downto 0);
+        PCount : in std_logic_vector(8 downto 0));
+end Instruction_Phase_Controller;
 
-architecture Behavioral of Instruction_REG is
-signal IREG : std_logic_vector(23 downto 0);
+architecture Behavioral of Instruction_Phase_Controller is
+
 begin
-IREG <= InstructionIN;
-InstructionOUT <= IREG;
 
-
+process(pcount)
+    begin
+        if( pcount'event) then
+            Write <= Fetch;
+        end if;
+end process;
 end Behavioral;
