@@ -32,19 +32,19 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity Instruction_Phase_Controller is
-Port (  Fetch : in std_logic_vector(23 downto 0);
-        Write : out std_logic_vector(23 downto 0);
-        PCount : in std_logic_vector(8 downto 0));
+--Port (  Fetch : in std_logic_vector(23 downto 0);
+--        Write : out std_logic_vector(23 downto 0);
+--        PCount : in std_logic_vector(8 downto 0));
 end Instruction_Phase_Controller;
 
 architecture Behavioral of Instruction_Phase_Controller is
 
 begin
 
-process(pcount)
-    begin
-        if( pcount'event) then
-            Write <= Fetch;
-        end if;
-end process;
+--process(pcount)
+--    begin
+--        if( pcount'event) then
+--            Write <= Fetch;
+--        end if;
+--end process;
 end Behavioral;

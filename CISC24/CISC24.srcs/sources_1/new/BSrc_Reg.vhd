@@ -10,14 +10,14 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity ASrc_Reg is
+entity BSrc_Reg is
  Port ( 
           Bout : in std_logic_vector(23 downto 0);
           ALU_select : out std_logic_vector(23 downto 0)  
         );
-end ASrc_Reg ;
+end BSrc_Reg ;
 
-architecture Behavioral of ASrc_Reg  is
+architecture Behavioral of BSrc_Reg  is
 
 signal REG : std_logic_vector(23 downto 0);
 

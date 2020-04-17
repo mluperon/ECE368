@@ -28,27 +28,42 @@ entity Instruction_Control_Block is
   Port (
   -- Inputs 
   CLK : in STD_LOGIC;
---  Instruction : in STD_LOGIC_VECTOR(23 downto 0);
-  FLAGS: in STD_LOGIC_VECTOR(3 downto 0);
-  OPCODE: out STD_LOGIC_VECTOR(4 downto 0)
+  RESET : in STD_LOGIC;
+  OPCODE : out STD_LOGIC_VECTOR(4 downto 0)
    );
 end Instruction_Control_Block;
 
 architecture Behavioral of Instruction_Control_Block is
 
-component IREG is
+component Instruction_REG is
 port(
        InstructionIN : in std_Logic_vector(23 downto 0);
        InstructionOUT : out std_Logic_vector(23 downto 0));
 end component;
-              
-
+component Program_Counter is
+Port ( clk : in std_logic;
+       PCount : out std_logic_vector(8 downto 0);
+       reset : in std_logic);
+end component;              
+component Instruction_Memory is
+port (
+ pc: in std_logic_vector(8 downto 0);
+ instruction: out  std_logic_vector(23 downto 0)
+);
+end component;
 signal InstructionOUT : std_logic_vector(23 downto 0);
 signal InstructionIN : std_logic_vector(23 downto 0);
+signal PC : std_logic_vector(8 downto 0);
 
 begin
 
-C1: IREG port map(InstructionIn => InstructionIn,
-                  InstructionOut => InstructionOut);
+C1: Instruction_REG port map(   InstructionIn => InstructionIn,
+                                InstructionOut => InstructionOut);
+C2: Instruction_Memory port map(   PC => PC,
+                                   Instruction => InstructionIN);
+C3: Program_Counter port map(   CLK => CLK,
+                                PCount => PC,
+                                reset => reset);
+                                
 
 end Behavioral;

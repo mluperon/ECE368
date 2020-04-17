@@ -48,7 +48,7 @@ architecture Behavioral of ALU is
 
 begin
 
-process(clk)
+process(opcode)
 begin
 if(clk'event and clk = '1' ) then
 case (opcode) is
