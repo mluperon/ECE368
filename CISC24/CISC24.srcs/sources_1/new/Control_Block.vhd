@@ -24,19 +24,31 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 use IEEE.NUMERIC_STD.ALL;  
 
-entity Control_Block is
+entity Instruction_Control_Block is
   Port (
   -- Inputs 
   CLK : in STD_LOGIC;
-  RESET: in STD_LOGIC;
+--  Instruction : in STD_LOGIC_VECTOR(23 downto 0);
   FLAGS: in STD_LOGIC_VECTOR(3 downto 0);
-  CODE: in STD_LOGIC_VECTOR(4 downto 0); 
+  OPCODE: out STD_LOGIC_VECTOR(4 downto 0)
    );
-end Control_Block;
+end Instruction_Control_Block;
 
-architecture Behavioral of Control_Block is
+architecture Behavioral of Instruction_Control_Block is
+
+component IREG is
+port(
+       InstructionIN : in std_Logic_vector(23 downto 0);
+       InstructionOUT : out std_Logic_vector(23 downto 0));
+end component;
+              
+
+signal InstructionOUT : std_logic_vector(23 downto 0);
+signal InstructionIN : std_logic_vector(23 downto 0);
 
 begin
 
+C1: IREG port map(InstructionIn => InstructionIn,
+                  InstructionOut => InstructionOut);
 
 end Behavioral;
