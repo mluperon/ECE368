@@ -13,7 +13,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity ASrc_Reg is
  Port ( 
           Aout : in std_logic_vector(23 downto 0);
-          ALU_select : out std_logic_vector(23 downto 0)  
+          ALU_A : out std_logic_vector(23 downto 0)  
         );
 end ASrc_Reg ;
 

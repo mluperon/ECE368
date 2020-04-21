@@ -13,7 +13,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity BSrc_Reg is
  Port ( 
           Bout : in std_logic_vector(23 downto 0);
-          ALU_select : out std_logic_vector(23 downto 0)  
+          ALU_B : out std_logic_vector(23 downto 0)  
         );
 end BSrc_Reg ;
 
