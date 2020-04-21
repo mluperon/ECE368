@@ -26,7 +26,6 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity Instruction_Control_Block is
   Port (
-  -- Inputs 
   CLK : in STD_LOGIC;
   RESET : in STD_LOGIC;
   OPCODE : out STD_LOGIC_VECTOR(4 downto 0)

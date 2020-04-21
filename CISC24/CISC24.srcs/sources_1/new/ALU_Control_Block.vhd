@@ -32,7 +32,10 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity ALU_Control_Block is
-Port ( clk : in std_logic );
+Port ( clk : in std_logic;
+       RA_Addr : in std_logic_vector(1 downto 0);
+       RB_Addr : in std_logic_vector(1 downto 0);
+       opcode : in std_logic_vector(4 downto 0) );
 end ALU_Control_Block;
 
 architecture Behavioral of ALU_Control_Block is
@@ -56,17 +59,26 @@ end component ;
 component ASrc_Reg is
  Port ( 
           Aout : in std_logic_vector(23 downto 0);
-          ALU_select : out std_logic_vector(23 downto 0)  
+          ALU_A : out std_logic_vector(23 downto 0)  
         );
 end component ;
 component BSrc_Reg is
  Port ( 
           Bout : in std_logic_vector(23 downto 0);
-          ALU_select : out std_logic_vector(23 downto 0)  
+          ALU_B : out std_logic_vector(23 downto 0)  
         );
 end component ;
-
-signal opcode : std_logic_vector(4 downto 0);
+component GeneralPurposeReg is
+Port ( RA_addr : in std_logic_vector(2 downto 0);
+       RB_addr : in std_logic_vector(2 downto 0);
+       RA_enable : in std_logic;
+       RA_data_in : in std_logic_vector(23 downto 0);
+       RA_out : out std_logic_vector (23 downto 0);
+       Rb_out: out std_logic_vector (23 downto 0)
+        );
+end component;
+signal Aout : std_logic_vector(23 downto 0);
+signal Bout : std_logic_vector(23 downto 0);
 signal immed : std_logic_vector(23 downto 0);
 signal SrcAin : std_logic_vector(23 downto 0);
 signal SrcAout: std_logic_vector(23 downto 0);
@@ -75,7 +87,7 @@ signal SrcBout: std_logic_vector(23 downto 0);
 signal ALU_OUT : std_logic_vector(23 downto 0);
 
 begin
-c1: ALU port map(   CLK=>CLK,
+C1: ALU port map(   CLK=>CLK,
                     opcode => opcode,
                     immed => immed,
                     srcAin => srcAin,
@@ -84,5 +96,14 @@ c1: ALU port map(   CLK=>CLK,
                     srcBout => srcBout,
                     ALU_out => ALU_out
                 );
-
+C2: GeneralPurposeReg port map(  RA_addr => RA_Addr,
+                                RB_addr => RB_Addr,
+                                RA_enable => '1',
+                                RA_data_in => srcAout,
+                                RA_out => Aout,
+                                Rb_out => Bout);
+C3: ASrc_Reg port map(  Aout => Aout,
+                        ALU_A => srcAin);
+C4: BSrc_Reg port map(  Bout => Bout,
+                        ALU_B => srcBin);
 end Behavioral;
