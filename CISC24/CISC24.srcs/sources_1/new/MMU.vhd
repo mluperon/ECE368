@@ -8,7 +8,7 @@
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
--- Description: 
+-- Description: State machine designed for CISC 24 Architecture
 -- 
 -- Dependencies: 
 -- 
@@ -32,8 +32,15 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity MMU is
---  Port ( );
+  Port ( 
+  clk:  in Std_logic;
+  address_in:  in std_logic_vector(19 downto 0);
+  ram_address: out std_logic_vector(19 downto 0);
+  ram_data:    in std_logic_vector(7 downto 0); 
+  enable:      in std_logic; 
+  reset:       in std_logic);
 end MMU;
+
 
 architecture Behavioral of MMU is
 
