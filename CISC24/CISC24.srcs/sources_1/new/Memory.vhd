@@ -5,9 +5,9 @@ use IEEE.Numeric_Std.all;
 entity Memory is
     Port ( clk : in std_logic;
            we : in std_logic;
-           address: in std_logic_vector;
-           datain : in std_logic_vector;
-           dataout : out std_logic_vector 
+           address: in std_logic_vector(511 downto 0);
+           datain : in std_logic_vector(23 downto 0);
+           dataout : out std_logic_vector(23 downto 0) 
             );
 end Memory;
 
