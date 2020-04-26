@@ -32,7 +32,18 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity Instruction_Decoder is
-Port (  opcode: out STD_LOGIC_VECTOR(4 downto 0);
+Port (  clk: in STD_LOGIC;
+        opcode: out STD_LOGIC_VECTOR(4 downto 0);
+        ADDR_A   : out STD_LOGIC_VECTOR(2 downto 0);
+		ADDR_B   : out STD_LOGIC_VECTOR(2 downto 0);
+		AM_A		: out STD_LOGIC_VECTOR(1 downto 0);
+		AM_B		: out STD_LOGIC_VECTOR(1 downto 0);
+		IMM_OOP	: out STD_LOGIC_VECTOR(23 downto 0);
+		IMM_TOP	: out STD_LOGIC_VECTOR(23 downto 0);
+		IMM_MEM  : out STD_LOGIC_VECTOR(23 downto 0);
+		IMM 		: out STD_LOGIC_VECTOR(23 downto 0);
+		IMM_BRN  : out STD_LOGIC_VECTOR(23 downto 0);
+		MSK		: out STD_LOGIC_VECTOR(3  downto 0);
         InstructionIN: in STD_LOGIC_VECTOR(23 downto 0));
 end Instruction_Decoder;
 
@@ -41,27 +52,42 @@ signal Instruction : std_logic_vector(23 downto 0);
 signal Mode : std_logic_vector(1 downto 0);
 begin
 Instruction <= InstructionIN;
-opcode <= Instruction(23 downto 19);
-with Instruction(23 downto 19) select mode <=
-    "00" when "00000",
-    "00" when "00100",
-    "00" when "00101",
-    "00" when "00110",
-    "00" when "00111",
-    "00" when "01000",
-    "00" when "01001",
-    "01" when "01010",
-    "00" when "01011",--mem
-    "00" when "01100",--mem
-    "00" when "01101",--mem
-    "01" when "10000",
-    "01" when "10001",
-    "01" when "10010",
-    "01" when "10011",
-    "01" when "10100",
-    "01" when "10110",
-    "01" when "10111",
-    "00" when "11000",
-    "00" when others;
-    
+--with Instruction(23 downto 19) select mode <=
+--    "00" when "00000",
+--    "00" when "00100",
+--    "00" when "00101",
+--    "00" when "00110",
+--    "00" when "00111",
+--    "00" when "01000",
+--    "00" when "01001",
+--    "01" when "01010",
+--    "00" when "01011",--mem
+--    "00" when "01100",--mem
+--    "00" when "01101",--mem
+--    "01" when "10000",
+--    "01" when "10001",
+--    "01" when "10010",
+--    "01" when "10011",
+--    "01" when "10100",
+--    "01" when "10110",
+--    "01" when "10111",
+--    "00" when "11000",
+--    "00" when others;
+process (CLK)
+    begin			
+        if (CLK'event and CLK='1') then	
+			ADDR_A   <= Instruction(16 downto 14);							-- SRC_A Address
+			AM_A     <= Instruction(18 downto 17);			
+			ADDR_B   <= Instruction(11 downto 9);								-- SRC_B Address
+			AM_B     <= Instruction(13 downto 12);
+			IMM_OOP  <= "0000000000" & instruction(13 downto 0);			-- IMMEDIATE
+			IMM_TOP  <= "000000000000000" & Instruction(8 downto 0);
+			IMM_MEM  <= "00000000000000"  & Instruction(18 downto 9);
+			IMM_BRN  <= "000000000" & Instruction(14 downto 0);		
+			IMM      <= "00000" & Instruction(18 downto 0);
+			OPCODE   <= Instruction(23 downto 19);							-- OPERAND
+			MSK		 <= Instruction(18 downto 15);							-- MASK
+									
+        end if;
+    end process;    
 end Behavioral;

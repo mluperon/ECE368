@@ -32,10 +32,19 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity ALU_Control_Block is
-Port ( clk : in std_logic;
-       RA_Addr : in std_logic_vector(1 downto 0);
-       RB_Addr : in std_logic_vector(1 downto 0);
-       opcode : in std_logic_vector(4 downto 0) );
+Port (  clk : in std_logic;
+        opcode: in STD_LOGIC_VECTOR(4 downto 0);
+        ADDR_A   : in STD_LOGIC_VECTOR(2 downto 0);
+		ADDR_B   : in STD_LOGIC_VECTOR(2 downto 0);
+--		AM_A		: in STD_LOGIC_VECTOR(1 downto 0);
+--		AM_B		: in STD_LOGIC_VECTOR(1 downto 0);
+--		IMM_OOP	: in STD_LOGIC_VECTOR(23 downto 0);
+--		IMM_TOP	: in STD_LOGIC_VECTOR(23 downto 0);
+--		IMM_MEM  : in STD_LOGIC_VECTOR(23 downto 0);
+		IMMED 		: in STD_LOGIC_VECTOR(23 downto 0)
+--		IMM_BRN  : in STD_LOGIC_VECTOR(23 downto 0);
+--		MSK		: in STD_LOGIC_VECTOR(3  downto 0)
+);
 end ALU_Control_Block;
 
 architecture Behavioral of ALU_Control_Block is
@@ -79,7 +88,6 @@ Port ( RA_addr : in std_logic_vector(2 downto 0);
 end component;
 signal Aout : std_logic_vector(23 downto 0);
 signal Bout : std_logic_vector(23 downto 0);
-signal immed : std_logic_vector(23 downto 0);
 signal SrcAin : std_logic_vector(23 downto 0);
 signal SrcAout: std_logic_vector(23 downto 0);
 signal SrcBin : std_logic_vector(23 downto 0);
@@ -96,9 +104,9 @@ C1: ALU port map(   CLK=>CLK,
                     srcBout => srcBout,
                     ALU_out => ALU_out
                 );
-C2: GeneralPurposeReg port map(  RA_addr => RA_Addr,
-                                RB_addr => RB_Addr,
-                                RA_enable => '1',
+C2: GeneralPurposeReg port map( RA_addr => ADDR_A,
+                                RB_addr => ADDR_B,
+                                RA_enable => '1', --write enable to RA set to 1 temporarily
                                 RA_data_in => srcAout,
                                 RA_out => Aout,
                                 Rb_out => Bout);

@@ -26,9 +26,19 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity Instruction_Control_Block is
   Port (
-  CLK : in STD_LOGIC;
-  RESET : in STD_LOGIC;
-  OPCODE : out STD_LOGIC_VECTOR(4 downto 0)
+        clk: in STD_LOGIC;
+        reset: in STD_LOGIC;
+        opcode: out STD_LOGIC_VECTOR(4 downto 0);
+        ADDR_A   : out STD_LOGIC_VECTOR(2 downto 0);
+		ADDR_B   : out STD_LOGIC_VECTOR(2 downto 0);
+		AM_A		: out STD_LOGIC_VECTOR(1 downto 0);
+		AM_B		: out STD_LOGIC_VECTOR(1 downto 0);
+		IMM_OOP	: out STD_LOGIC_VECTOR(23 downto 0);
+		IMM_TOP	: out STD_LOGIC_VECTOR(23 downto 0);
+		IMM_MEM  : out STD_LOGIC_VECTOR(23 downto 0);
+		IMM 		: out STD_LOGIC_VECTOR(23 downto 0);
+		IMM_BRN  : out STD_LOGIC_VECTOR(23 downto 0);
+		MSK		: out STD_LOGIC_VECTOR(3  downto 0)
    );
 end Instruction_Control_Block;
 
@@ -51,7 +61,18 @@ port (
 );
 end component;
 component Instruction_Decoder is
-Port (  opcode: out STD_LOGIC_VECTOR(4 downto 0);
+Port (  clk: in STD_LOGIC;
+        opcode: out STD_LOGIC_VECTOR(4 downto 0);
+        ADDR_A   : out STD_LOGIC_VECTOR(2 downto 0);
+		ADDR_B   : out STD_LOGIC_VECTOR(2 downto 0);
+		AM_A		: out STD_LOGIC_VECTOR(1 downto 0);
+		AM_B		: out STD_LOGIC_VECTOR(1 downto 0);
+		IMM_OOP	: out STD_LOGIC_VECTOR(23 downto 0);
+		IMM_TOP	: out STD_LOGIC_VECTOR(23 downto 0);
+		IMM_MEM  : out STD_LOGIC_VECTOR(23 downto 0);
+		IMM 		: out STD_LOGIC_VECTOR(23 downto 0);
+		IMM_BRN  : out STD_LOGIC_VECTOR(23 downto 0);
+		MSK		: out STD_LOGIC_VECTOR(3  downto 0);
         InstructionIN: in STD_LOGIC_VECTOR(23 downto 0));
 end component;
 signal InstructionOUT : std_logic_vector(23 downto 0);
@@ -67,7 +88,16 @@ C2: Instruction_Memory port map(   PC => PC,
 C3: Program_Counter port map(   CLK => CLK,
                                 PCount => PC,
                                 reset => reset);                              
-C4: Instruction_Decoder port map( instructionin =>   instructionOUT,
-                                  opcode => opcode);
+C4: Instruction_Decoder port map(   clk => clk,
+                                    opcode => opcode,
+                                    instructionin =>   instructionOUT,
+                                    ADDR_A => ADDR_A,
+                                    ADDR_B => ADDR_B,
+                                    AM_A => AM_A,
+                                    AM_B => AM_B,
+                                    IMM_OOP => IMM_OOP,
+                                    IMM_TOP => IMM_TOP,
+                                    IMM_MEM => IMM_MEM
+                                    );
                                   
 end Behavioral;
