@@ -34,6 +34,7 @@ entity Control_Block is
 end Control_Block;
 
 architecture Structural of Control_Block is
+
 component Instruction_Control_Block is
   Port (    PcTest: out STD_LOGIC_VECTOR(8 downto 0);
         clk: in STD_LOGIC;
@@ -60,6 +61,15 @@ Port (  clk : in std_logic;
 		ADDR_B   : in STD_LOGIC_VECTOR(2 downto 0);
 		IMMED 		: in STD_LOGIC_VECTOR(23 downto 0));
 end component;
+component MMU is
+  Port (clk        :  in Std_logic;   
+        enable     : in std_logic; 	
+        reset      : in std_logic;
+        address_in : in std_logic_vector(9 downto 0); --input addresses for memory fetch
+        address_out: out std_logic_vector(9 downto 0);
+        data_in    : in std_logic_vector(23 downto 0); --output memory address
+        data_out    : out std_logic_vector(23 downto 0)); 
+end component;
 
 signal slow_clock: std_logic_vector(26 downto 0);
 signal opcode : STD_LOGIC_VECTOR(4 downto 0);
@@ -74,6 +84,12 @@ signal IMM_MEM : STD_LOGIC_VECTOR(23 downto 0);
 signal IMM : STD_LOGIC_VECTOR(23 downto 0);
 signal IMM_BRN : STD_LOGIC_VECTOR(23 downto 0);
 signal MSK	: STD_LOGIC_VECTOR(3  downto 0);
+signal enable : std_logic;
+signal Address_in : STD_LOGIC_VECTOR(9 downto 0);
+signal Address_out : STD_LOGIC_VECTOR(9 downto 0);
+signal data_in : STD_LOGIC_VECTOR(23 downto 0);
+signal data_out : STD_LOGIC_VECTOR(23 downto 0);
+
 signal ATEST	: STD_LOGIC_VECTOR(3  downto 0); 
 
 begin
@@ -110,5 +126,13 @@ B : ALU_Control_Block port map(clk => slow_clock(26),
                                ADDR_B => ADDR_B,
                                IMMED =>IMMED
 );
+C: MMU port map(    clk => clk,
+                    enable => enable,
+                    reset=> reset,
+                    address_in => Address_in,
+                    address_out => Address_out,
+                    data_in => data_in,
+                    data_out => data_out);
+                    
 LED(3 downto 0) <= ATEST(3 downto 0);
 end Structural;

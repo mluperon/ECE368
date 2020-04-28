@@ -1,0 +1,18 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../CISC24.srcs/sources_1/new/ALU.vhd" \
+"../../../../CISC24.srcs/sources_1/new/ALU_Control_Block.vhd" \
+"../../../../CISC24.srcs/sources_1/new/ASrc_Reg.vhd" \
+"../../../../CISC24.srcs/sources_1/new/BSrc_Reg.vhd" \
+"../../../../CISC24.srcs/sources_1/new/GeneralPurposeReg.vhd" \
+"../../../../CISC24.srcs/sources_1/new/Instruction_Control_Block.vhd" \
+"../../../../CISC24.srcs/sources_1/new/Instruction_Decoder.vhd" \
+"../../../../CISC24.srcs/sources_1/new/Instruction_Memory.vhd" \
+"../../../../CISC24.srcs/sources_1/new/Instruction_REG.vhd" \
+"../../../../CISC24.srcs/sources_1/new/MMU.vhd" \
+"../../../../CISC24.srcs/sources_1/new/Memory.vhd" \
+"../../../../CISC24.srcs/sources_1/new/Program_Counter.vhd" \
+"../../../../CISC24.srcs/sources_1/new/Top_Control_Block.vhd" \
+
+# Do not sort compile order
+nosort

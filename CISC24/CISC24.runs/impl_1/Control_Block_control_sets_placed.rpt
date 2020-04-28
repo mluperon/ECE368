@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Tue Apr 28 14:54:34 2020
+| Date         : Tue Apr 28 18:47:47 2020
 | Host         : DESKTOP-5G5DH1Q running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Control_Block_control_sets_placed.rpt
 | Design       : Control_Block
@@ -61,8 +61,8 @@ Table of Contents
 | No           | No                    | No                     |              38 |           11 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |               0 |            0 |
-| Yes          | No                    | No                     |             301 |          185 |
-| Yes          | No                    | Yes                    |               9 |            4 |
+| Yes          | No                    | No                     |             301 |          146 |
+| Yes          | No                    | Yes                    |               9 |            3 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -74,20 +74,20 @@ Table of Contents
 |  Clock Signal  |      Enable Signal      | Set/Reset Signal | Slice Load Count | Bel Load Count |
 +----------------+-------------------------+------------------+------------------+----------------+
 |  CLK_IBUF_BUFG | B/State0                |                  |                1 |              4 |
-| ~clk_BUFG      | A/C3/sel                | RESET_IBUF       |                4 |              9 |
-|  clk_BUFG      |                         |                  |                3 |             10 |
-|  CLK_IBUF_BUFG | B/RA_data_in0           |                  |               14 |             24 |
-|  clk_BUFG      | A/C4/RA_enable_reg_6[0] |                  |               16 |             24 |
-|  clk_BUFG      | A/C4/RA_enable_reg[0]   |                  |               15 |             24 |
-|  clk_BUFG      | A/C4/RA_enable_reg_3[0] |                  |               18 |             24 |
-|  clk_BUFG      | A/C4/RA_enable_reg_2[0] |                  |               18 |             24 |
-|  clk_BUFG      | A/C4/RA_enable_reg_5[0] |                  |               15 |             24 |
-|  clk_BUFG      | A/C4/RA_enable_reg_0[0] |                  |               15 |             24 |
-|  clk_BUFG      | A/C4/RA_enable_reg_1[0] |                  |               17 |             24 |
-|  clk_BUFG      | A/C4/RA_enable_reg_4[0] |                  |               17 |             24 |
+| ~clk           | A/C3/sel                | RESET_IBUF       |                3 |              9 |
+|  clk           |                         |                  |                3 |             10 |
+|  CLK_IBUF_BUFG | A/C4/RA_enable_reg_2[0] |                  |                9 |             24 |
+|  CLK_IBUF_BUFG | A/C4/RA_enable_reg_1[0] |                  |                9 |             24 |
+|  CLK_IBUF_BUFG | A/C4/RA_enable_reg_3[0] |                  |               13 |             24 |
+|  CLK_IBUF_BUFG | A/C4/RA_enable_reg_5[0] |                  |               11 |             24 |
+|  CLK_IBUF_BUFG | A/C4/RA_enable_reg_0[0] |                  |               11 |             24 |
+|  CLK_IBUF_BUFG | A/C4/RA_enable_reg_4[0] |                  |               12 |             24 |
+|  CLK_IBUF_BUFG | A/C4/RA_enable_reg_6[0] |                  |                9 |             24 |
+|  CLK_IBUF_BUFG | A/C4/RA_enable_reg[0]   |                  |               11 |             24 |
+|  CLK_IBUF_BUFG | B/RA_data_in0           |                  |               10 |             24 |
 |  CLK_IBUF_BUFG |                         |                  |                8 |             28 |
-|  clk_BUFG      | A/C4/E[0]               |                  |               13 |             28 |
-|  clk_BUFG      | B/C2/RA[23]_i_1_n_0     |                  |               26 |             53 |
+|  CLK_IBUF_BUFG | A/C4/E[0]               |                  |               17 |             28 |
+|  CLK_IBUF_BUFG | B/C2/RA[23]_i_1_n_0     |                  |               33 |             53 |
 +----------------+-------------------------+------------------+------------------+----------------+
 
 

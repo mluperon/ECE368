@@ -113,7 +113,7 @@ begin
         end case;
     end if;
 end process;
-C1: ALU port map(   CLK=>CLK,
+C1: ALU port map(   CLK=>subCLK,
                     opcode => opcode,
                     immed => immed,
                     srcAin => srcAin,
@@ -122,7 +122,7 @@ C1: ALU port map(   CLK=>CLK,
                     srcBout => srcBout
                     --ALU_out => ALU_out
                 );
-C2: GeneralPurposeReg port map( clk => clk,
+C2: GeneralPurposeReg port map( clk => subclk,
                                 RA_addr => ADDR_A,
                                 RB_addr => ADDR_B,
                                 RA_enable => RA_enable, --write enable to RA set to 1 temporarily
