@@ -199,3 +199,124 @@ selectCodeEditor("MMU.vhd", 231, 317); // ch (w, cr)
 // WARNING: HSwingWorker (Update Runs Swing Worker) is taking 16495 ms. Increasing delay to 10000 ms.
 // WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7361 ms. Increasing delay to 10000 ms.
 // WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 28 ms. Decreasing delay to 2028 ms.
+// Elapsed time: 779 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd), B : ALU_Control_Block(Behavioral) (ALU_Control_Block.vhd)]", 7); // B (F, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd), A : Instruction_Control_Block(structural) (Instruction_Control_Block.vhd)]", 2); // B (F, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd)]", 1); // B (F, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources]", 2); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources]", 2); // B (F, cr)
+// Elapsed time: 36 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources]", 2); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd)]", 1); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd), A : Instruction_Control_Block(structural) (Instruction_Control_Block.vhd)]", 2); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd), B : ALU_Control_Block(Behavioral) (ALU_Control_Block.vhd)]", 7); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd)]", 1, true); // B (F, cr) - Node
+// Elapsed time: 99 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd)]", 1, true); // B (F, cr) - Node
+// Elapsed time: 66 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd), A : Instruction_Control_Block(structural) (Instruction_Control_Block.vhd), C1 : Instruction_REG(Behavioral) (Instruction_REG.vhd)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd), A : Instruction_Control_Block(structural) (Instruction_Control_Block.vhd), C2 : Instruction_Memory(Behavioral) (Instruction_Memory.vhd)]", 4, false); // B (F, cr)
+// Elapsed time: 40 seconds
+selectCodeEditor("MMU.vhd", 323, 326); // ch (w, cr)
+selectCodeEditor("MMU.vhd", 26, 316); // ch (w, cr)
+selectCodeEditor("MMU.vhd", 203, 317); // ch (w, cr)
+selectCodeEditor("MMU.vhd", 5, 314); // ch (w, cr)
+// Elapsed time: 21 seconds
+selectCodeEditor("MMU.vhd", 342, 156); // ch (w, cr)
+// Elapsed time: 59 seconds
+selectCodeEditor("MMU.vhd", 350, 209); // ch (w, cr)
+selectCodeEditor("MMU.vhd", 362, 178); // ch (w, cr)
+selectCodeEditor("MMU.vhd", 364, 191); // ch (w, cr)
+selectCodeEditor("MMU.vhd", 25, 199); // ch (w, cr)
+selectCodeEditor("MMU.vhd", 200, 243); // ch (w, cr)
+selectCodeEditor("MMU.vhd", 303, 190); // ch (w, cr)
+// Elapsed time: 122 seconds
+selectCodeEditor("MMU.vhd", 112, 178); // ch (w, cr)
+// Elapsed time: 81 seconds
+selectCodeEditor("MMU.vhd", 212, 226); // ch (w, cr)
+selectCodeEditor("MMU.vhd", 9, 218); // ch (w, cr)
+selectCodeEditor("MMU.vhd", 158, 144); // ch (w, cr)
+selectCodeEditor("MMU.vhd", 33, 142); // ch (w, cr)
+selectCodeEditor("MMU.vhd", 5, 145); // ch (w, cr)
+selectCodeEditor("MMU.vhd", 14, 148); // ch (w, cr)
+selectCodeEditor("MMU.vhd", 336, 231); // ch (w, cr)
+selectCodeEditor("MMU.vhd", 39, 142); // ch (w, cr)
+selectCodeEditor("MMU.vhd", 55, 147); // ch (w, cr)
+selectCodeEditor("MMU.vhd", 42, 150); // ch (w, cr)
+selectCodeEditor("MMU.vhd", 309, 201); // ch (w, cr)
+selectCodeEditor("MMU.vhd", 34, 142); // ch (w, cr)
+selectCodeEditor("MMU.vhd", 28, 164); // ch (w, cr)
+selectCodeEditor("MMU.vhd", 27, 173); // ch (w, cr)
+selectCodeEditor("MMU.vhd", 31, 191); // ch (w, cr)
+selectCodeEditor("MMU.vhd", 30, 218); // ch (w, cr)
+selectCodeEditor("MMU.vhd", 384, 219); // ch (w, cr)
+selectCodeEditor("MMU.vhd", 128, 231); // ch (w, cr)
+// Elapsed time: 44 seconds
+selectCodeEditor("MMU.vhd", 40, 71); // ch (w, cr)
+selectCodeEditor("MMU.vhd", 414, 407); // ch (w, cr)
+// Elapsed time: 53 seconds
+selectCodeEditor("MMU.vhd", 65, 76); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (f, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 118 MB (+126kb) [00:51:38]
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 1418 ms to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 1325 ms to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 4830 ms. Increasing delay to 14490 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 12337 ms. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 6633 ms. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5276 ms. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 8110 ms. Increasing delay to 24330 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 8117 ms. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 911 ms. Decreasing delay to 2911 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2175 ms. Increasing delay to 6525 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 6572 ms. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 4699 ms. Increasing delay to 14097 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 6084 ms. Increasing delay to 10000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 950 MB. GUI used memory: 52 MB. Current time: 4/28/20, 1:39:41 PM EDT
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1552 ms. Decreasing delay to 3552 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 3815 ms. Increasing delay to 11445 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7004 ms. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5792 ms. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1900 ms. Decreasing delay to 3900 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2100 ms. Increasing delay to 6300 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 6415 ms. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 3791 ms. Increasing delay to 11373 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 6428 ms. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 14 ms. Decreasing delay to 2014 ms.
+// Elapsed time: 1396 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources]", 12, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 13, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd), A : Instruction_Control_Block(structural) (Instruction_Control_Block.vhd), C1 : Instruction_REG(Behavioral) (Instruction_REG.vhd)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd), A : Instruction_Control_Block(structural) (Instruction_Control_Block.vhd), C1 : Instruction_REG(Behavioral) (Instruction_REG.vhd)]", 3, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd), A : Instruction_Control_Block(structural) (Instruction_Control_Block.vhd), C2 : Instruction_Memory(Behavioral) (Instruction_Memory.vhd)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd), A : Instruction_Control_Block(structural) (Instruction_Control_Block.vhd)]", 2, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd), A : Instruction_Control_Block(structural) (Instruction_Control_Block.vhd)]", 2, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd), B : ALU_Control_Block(Behavioral) (ALU_Control_Block.vhd)]", 3, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd), B : ALU_Control_Block(Behavioral) (ALU_Control_Block.vhd)]", 3, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources]", 4, true); // B (F, cr) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources]", 4); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, Instruction_Phase_Controller.vhd]", 7, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, Dst_Addr_Reg.vhd]", 6, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, Dst_Addr_Reg.vhd]", 6, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("Dst_Addr_Reg.vhd", 308, 255); // ch (w, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, ALU_Data_Reg.vhd]", 5, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, ALU_Data_Reg.vhd]", 5, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, ALU_Data_Reg.vhd]", 5, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, ALU_Data_Reg.vhd]", 5, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, Instruction_Phase_Controller.vhd]", 7, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, Instruction_Phase_Controller.vhd]", 7, false, false, false, false, false, true); // B (F, cr) - Double Click
+// Elapsed time: 28 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd), A : Instruction_Control_Block(structural) (Instruction_Control_Block.vhd)]", 2); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd), A : Instruction_Control_Block(structural) (Instruction_Control_Block.vhd), C4 : Instruction_Decoder(Behavioral) (Instruction_Decoder.vhd)]", 6, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd), A : Instruction_Control_Block(structural) (Instruction_Control_Block.vhd), C4 : Instruction_Decoder(Behavioral) (Instruction_Decoder.vhd)]", 6, false, false, false, false, false, true); // B (F, cr) - Double Click
+// Elapsed time: 46 seconds
+selectCodeEditor("Instruction_Decoder.vhd", 201, 117); // ch (w, cr)
+// Elapsed time: 267 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (f, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
