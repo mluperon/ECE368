@@ -25,7 +25,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 use IEEE.NUMERIC_STD.ALL;  
 
 entity Instruction_Control_Block is
-  Port (
+  Port (    PcTest: out STD_LOGIC_VECTOR(8 downto 0);
         clk: in STD_LOGIC;
         reset: in STD_LOGIC;
         opcode: out STD_LOGIC_VECTOR(4 downto 0);
@@ -42,7 +42,7 @@ entity Instruction_Control_Block is
    );
 end Instruction_Control_Block;
 
-architecture Behavioral of Instruction_Control_Block is
+architecture structural of Instruction_Control_Block is
 
 component Instruction_REG is
 port(
@@ -99,5 +99,5 @@ C4: Instruction_Decoder port map(   clk => clk,
                                     IMM_TOP => IMM_TOP,
                                     IMM_MEM => IMM_MEM
                                     );
-                                  
-end Behavioral;
+PcTest <= PC;                                 
+end structural;

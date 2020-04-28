@@ -24,6 +24,6 @@ signal REG : std_logic_vector(23 downto 0);
 begin
 
 REG <= Bout;
-ALU_select <= REG;
+ALU_B <= REG;
 
 end behavioral;

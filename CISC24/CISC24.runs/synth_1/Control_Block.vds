@@ -1,0 +1,574 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Apr 28 11:12:54 2020
+# Process ID: 14900
+# Current directory: C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.runs/synth_1
+# Command line: vivado.exe -log Control_Block.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Control_Block.tcl
+# Log file: C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.runs/synth_1/Control_Block.vds
+# Journal file: C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Control_Block.tcl -notrace
+Command: synth_design -top Control_Block -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 19916 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 814.363 ; gain = 234.082
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Control_Block' [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/Top_Control_Block.vhd:37]
+INFO: [Synth 8-3491] module 'Instruction_Control_Block' declared at 'C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/Instruction_Control_Block.vhd:27' bound to instance 'A' of component 'Instruction_Control_Block' [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/Top_Control_Block.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'Instruction_Control_Block' [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/Instruction_Control_Block.vhd:45]
+INFO: [Synth 8-3491] module 'Instruction_REG' declared at 'C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/Instruction_REG.vhd:34' bound to instance 'C1' of component 'Instruction_REG' [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/Instruction_Control_Block.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'Instruction_REG' [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/Instruction_REG.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'Instruction_REG' (1#1) [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/Instruction_REG.vhd:39]
+INFO: [Synth 8-3491] module 'Instruction_Memory' declared at 'C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/Instruction_Memory.vhd:35' bound to instance 'C2' of component 'Instruction_Memory' [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/Instruction_Control_Block.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'Instruction_Memory' [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/Instruction_Memory.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Instruction_Memory' (2#1) [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/Instruction_Memory.vhd:42]
+INFO: [Synth 8-3491] module 'Program_Counter' declared at 'C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/Program_Counter.vhd:36' bound to instance 'C3' of component 'Program_Counter' [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/Instruction_Control_Block.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'Program_Counter' [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/Program_Counter.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Program_Counter' (3#1) [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/Program_Counter.vhd:42]
+INFO: [Synth 8-3491] module 'Instruction_Decoder' declared at 'C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/Instruction_Decoder.vhd:34' bound to instance 'C4' of component 'Instruction_Decoder' [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/Instruction_Control_Block.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'Instruction_Decoder' [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/Instruction_Decoder.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'Instruction_Decoder' (4#1) [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/Instruction_Decoder.vhd:50]
+WARNING: [Synth 8-3848] Net IMM in module/entity Instruction_Control_Block does not have driver. [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/Instruction_Control_Block.vhd:39]
+WARNING: [Synth 8-3848] Net IMM_BRN in module/entity Instruction_Control_Block does not have driver. [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/Instruction_Control_Block.vhd:40]
+WARNING: [Synth 8-3848] Net MSK in module/entity Instruction_Control_Block does not have driver. [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/Instruction_Control_Block.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Instruction_Control_Block' (5#1) [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/Instruction_Control_Block.vhd:45]
+INFO: [Synth 8-3491] module 'ALU_Control_Block' declared at 'C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/ALU_Control_Block.vhd:36' bound to instance 'B' of component 'ALU_Control_Block' [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/Top_Control_Block.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'ALU_Control_Block' [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/ALU_Control_Block.vhd:54]
+WARNING: [Synth 8-614] signal 'clk' is read in the process but is not in the sensitivity list [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/ALU_Control_Block.vhd:104]
+INFO: [Synth 8-3491] module 'ALU' declared at 'C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/ALU.vhd:35' bound to instance 'C1' of component 'ALU' [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/ALU_Control_Block.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/ALU.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (6#1) [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/ALU.vhd:47]
+INFO: [Synth 8-3491] module 'GeneralPurposeReg' declared at 'C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/GeneralPurposeReg.vhd:34' bound to instance 'C2' of component 'GeneralPurposeReg' [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/ALU_Control_Block.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'GeneralPurposeReg' [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/GeneralPurposeReg.vhd:44]
+WARNING: [Synth 8-614] signal 'R0' is read in the process but is not in the sensitivity list [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/GeneralPurposeReg.vhd:60]
+WARNING: [Synth 8-614] signal 'R1' is read in the process but is not in the sensitivity list [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/GeneralPurposeReg.vhd:60]
+WARNING: [Synth 8-614] signal 'R2' is read in the process but is not in the sensitivity list [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/GeneralPurposeReg.vhd:60]
+WARNING: [Synth 8-614] signal 'R3' is read in the process but is not in the sensitivity list [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/GeneralPurposeReg.vhd:60]
+WARNING: [Synth 8-614] signal 'R4' is read in the process but is not in the sensitivity list [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/GeneralPurposeReg.vhd:60]
+WARNING: [Synth 8-614] signal 'R5' is read in the process but is not in the sensitivity list [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/GeneralPurposeReg.vhd:60]
+WARNING: [Synth 8-614] signal 'R6' is read in the process but is not in the sensitivity list [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/GeneralPurposeReg.vhd:60]
+WARNING: [Synth 8-614] signal 'R7' is read in the process but is not in the sensitivity list [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/GeneralPurposeReg.vhd:60]
+WARNING: [Synth 8-614] signal 'RB_addr' is read in the process but is not in the sensitivity list [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/GeneralPurposeReg.vhd:60]
+WARNING: [Synth 8-614] signal 'RA_data_in' is read in the process but is not in the sensitivity list [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/GeneralPurposeReg.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'GeneralPurposeReg' (7#1) [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/GeneralPurposeReg.vhd:44]
+INFO: [Synth 8-3491] module 'ASrc_Reg' declared at 'C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/ASrc_Reg.vhd:13' bound to instance 'C3' of component 'ASrc_Reg' [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/ALU_Control_Block.vhd:128]
+INFO: [Synth 8-638] synthesizing module 'ASrc_Reg' [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/ASrc_Reg.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'ASrc_Reg' (8#1) [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/ASrc_Reg.vhd:20]
+INFO: [Synth 8-3491] module 'BSrc_Reg' declared at 'C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/BSrc_Reg.vhd:13' bound to instance 'C4' of component 'BSrc_Reg' [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/ALU_Control_Block.vhd:130]
+INFO: [Synth 8-638] synthesizing module 'BSrc_Reg' [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/BSrc_Reg.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'BSrc_Reg' (9#1) [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/BSrc_Reg.vhd:20]
+WARNING: [Synth 8-614] signal 'SrcAin' is read in the process but is not in the sensitivity list [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/ALU_Control_Block.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'ALU_Control_Block' (10#1) [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/ALU_Control_Block.vhd:54]
+WARNING: [Synth 8-3848] Net IMMED in module/entity Control_Block does not have driver. [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/Top_Control_Block.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'Control_Block' (11#1) [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/Top_Control_Block.vhd:37]
+WARNING: [Synth 8-3331] design ALU_Control_Block has unconnected port subclk
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port pc[8]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port pc[7]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port pc[6]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port pc[5]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port pc[4]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM[23]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM[22]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM[21]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM[20]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM[19]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM[18]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM[17]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM[16]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM[15]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM[14]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM[13]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM[12]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM[11]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM[10]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM[9]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM[8]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM[7]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM[6]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM[5]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM[4]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM[3]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM[2]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM[1]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM[0]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM_BRN[23]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM_BRN[22]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM_BRN[21]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM_BRN[20]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM_BRN[19]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM_BRN[18]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM_BRN[17]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM_BRN[16]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM_BRN[15]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM_BRN[14]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM_BRN[13]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM_BRN[12]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM_BRN[11]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM_BRN[10]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM_BRN[9]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM_BRN[8]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM_BRN[7]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM_BRN[6]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM_BRN[5]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM_BRN[4]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM_BRN[3]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM_BRN[2]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM_BRN[1]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port IMM_BRN[0]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port MSK[3]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port MSK[2]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port MSK[1]
+WARNING: [Synth 8-3331] design Instruction_Control_Block has unconnected port MSK[0]
+WARNING: [Synth 8-3331] design Control_Block has unconnected port LED[6]
+WARNING: [Synth 8-3331] design Control_Block has unconnected port LED[5]
+WARNING: [Synth 8-3331] design Control_Block has unconnected port LED[4]
+WARNING: [Synth 8-3331] design Control_Block has unconnected port LED[3]
+WARNING: [Synth 8-3331] design Control_Block has unconnected port LED[2]
+WARNING: [Synth 8-3331] design Control_Block has unconnected port LED[1]
+WARNING: [Synth 8-3331] design Control_Block has unconnected port LED[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 887.621 ; gain = 307.340
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 887.621 ; gain = 307.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 887.621 ; gain = 307.340
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 887.621 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/constrs_1/imports/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/constrs_1/imports/Nexys-4-DDR-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/constrs_1/imports/Nexys-4-DDR-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Control_Block_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Control_Block_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 987.016 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 987.016 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 987.016 ; gain = 406.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 987.016 ; gain = 406.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 987.016 ; gain = 406.734
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/ALU.vhd:54]
+INFO: [Synth 8-5546] ROM "SrcAout" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SrcBout" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'RA_reg' [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/GeneralPurposeReg.vhd:57]
+WARNING: [Synth 8-327] inferring latch for variable 'RB_reg' [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/GeneralPurposeReg.vhd:58]
+WARNING: [Synth 8-327] inferring latch for variable 'R0_reg' [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/GeneralPurposeReg.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'R1_reg' [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/GeneralPurposeReg.vhd:66]
+WARNING: [Synth 8-327] inferring latch for variable 'R2_reg' [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/GeneralPurposeReg.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 'R3_reg' [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/GeneralPurposeReg.vhd:68]
+WARNING: [Synth 8-327] inferring latch for variable 'R4_reg' [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/GeneralPurposeReg.vhd:69]
+WARNING: [Synth 8-327] inferring latch for variable 'R5_reg' [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/GeneralPurposeReg.vhd:70]
+WARNING: [Synth 8-327] inferring latch for variable 'R6_reg' [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/GeneralPurposeReg.vhd:71]
+WARNING: [Synth 8-327] inferring latch for variable 'R7_reg' [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/GeneralPurposeReg.vhd:72]
+WARNING: [Synth 8-327] inferring latch for variable 'RA_enable_reg' [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/ALU_Control_Block.vhd:124]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 987.016 ; gain = 406.734
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     24 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 3     
+	   2 Input      9 Bit       Adders := 1     
++---XORs : 
+	   2 Input     24 Bit         XORs := 1     
++---Registers : 
+	               24 Bit    Registers := 2     
+	               19 Bit    Registers := 1     
+	               15 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
++---Muxes : 
+	  15 Input     24 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 3     
+	   9 Input     24 Bit        Muxes := 1     
+	  15 Input      4 Bit        Muxes := 1     
+	  15 Input      2 Bit        Muxes := 1     
+	  15 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Program_Counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+Module Instruction_Decoder 
+Detailed RTL Component Info : 
++---Registers : 
+	               19 Bit    Registers := 1     
+	               15 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     24 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 3     
++---XORs : 
+	   2 Input     24 Bit         XORs := 1     
++---Registers : 
+	               24 Bit    Registers := 2     
++---Muxes : 
+	  15 Input     24 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 3     
+	   9 Input     24 Bit        Muxes := 1     
+	  15 Input      4 Bit        Muxes := 1     
+	  15 Input      2 Bit        Muxes := 1     
+	  15 Input      1 Bit        Muxes := 2     
+Module GeneralPurposeReg 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      1 Bit        Muxes := 8     
+Module ALU_Control_Block 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design Control_Block has unconnected port LED[6]
+WARNING: [Synth 8-3331] design Control_Block has unconnected port LED[5]
+WARNING: [Synth 8-3331] design Control_Block has unconnected port LED[4]
+WARNING: [Synth 8-3331] design Control_Block has unconnected port LED[3]
+WARNING: [Synth 8-3331] design Control_Block has unconnected port LED[2]
+WARNING: [Synth 8-3331] design Control_Block has unconnected port LED[1]
+WARNING: [Synth 8-3331] design Control_Block has unconnected port LED[0]
+WARNING: [Synth 8-3332] Sequential element (B/C2/RA_reg[23]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RA_reg[22]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RA_reg[21]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RA_reg[20]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RA_reg[19]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RA_reg[18]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RA_reg[17]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RA_reg[16]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RA_reg[15]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RA_reg[14]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RA_reg[13]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RA_reg[12]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RA_reg[11]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RA_reg[10]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RA_reg[9]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RA_reg[8]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RA_reg[7]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RA_reg[6]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RA_reg[5]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RA_reg[4]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RA_reg[3]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RA_reg[2]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RA_reg[1]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RA_reg[0]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RB_reg[23]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RB_reg[22]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RB_reg[21]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RB_reg[20]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RB_reg[19]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RB_reg[18]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RB_reg[17]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RB_reg[16]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RB_reg[15]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RB_reg[14]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RB_reg[13]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RB_reg[12]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RB_reg[11]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RB_reg[10]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RB_reg[9]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RB_reg[8]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RB_reg[7]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RB_reg[6]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RB_reg[5]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RB_reg[4]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RB_reg[3]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RB_reg[2]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RB_reg[1]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/RB_reg[0]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R0_reg[23]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R0_reg[22]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R0_reg[21]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R0_reg[20]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R0_reg[19]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R0_reg[18]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R0_reg[17]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R0_reg[16]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R0_reg[15]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R0_reg[14]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R0_reg[13]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R0_reg[12]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R0_reg[11]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R0_reg[10]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R0_reg[9]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R0_reg[8]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R0_reg[7]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R0_reg[6]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R0_reg[5]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R0_reg[4]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R0_reg[3]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R0_reg[2]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R0_reg[1]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R0_reg[0]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R1_reg[23]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R1_reg[22]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R1_reg[21]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R1_reg[20]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R1_reg[19]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R1_reg[18]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R1_reg[17]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R1_reg[16]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R1_reg[15]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R1_reg[14]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R1_reg[13]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R1_reg[12]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R1_reg[11]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R1_reg[10]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R1_reg[9]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R1_reg[8]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R1_reg[7]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R1_reg[6]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R1_reg[5]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R1_reg[4]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R1_reg[3]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R1_reg[2]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R1_reg[1]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R1_reg[0]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R2_reg[23]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R2_reg[22]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R2_reg[21]) is unused and will be removed from module Control_Block.
+WARNING: [Synth 8-3332] Sequential element (B/C2/R2_reg[20]) is unused and will be removed from module Control_Block.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 987.016 ; gain = 406.734
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 987.016 ; gain = 406.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 987.016 ; gain = 406.734
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 987.016 ; gain = 406.734
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 987.016 ; gain = 406.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 987.016 ; gain = 406.734
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 987.016 ; gain = 406.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 987.016 ; gain = 406.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 987.016 ; gain = 406.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 987.016 ; gain = 406.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     7|
+|3     |LUT1   |     3|
+|4     |LUT2   |     2|
+|5     |LUT3   |     2|
+|6     |LUT4   |     2|
+|7     |LUT5   |     1|
+|8     |LUT6   |     2|
+|9     |FDCE   |     9|
+|10    |FDRE   |    27|
+|11    |IBUF   |     2|
+|12    |OBUF   |     9|
+|13    |OBUFT  |     7|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+--------------------------+------+
+|      |Instance |Module                    |Cells |
++------+---------+--------------------------+------+
+|1     |top      |                          |    74|
+|2     |  A      |Instruction_Control_Block |    20|
+|3     |    C3   |Program_Counter           |    20|
++------+---------+--------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 987.016 ; gain = 406.734
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 259 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 987.016 ; gain = 307.340
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 987.016 ; gain = 406.734
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 987.016 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 997.465 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+48 Infos, 199 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 997.465 ; gain = 695.523
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 997.465 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.runs/synth_1/Control_Block.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Control_Block_utilization_synth.rpt -pb Control_Block_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 28 11:13:19 2020...

@@ -44,26 +44,26 @@ signal rom_addr: std_logic_vector(3 downto 0);
 
  type ROM_type is array (0 to  15) of std_logic_vector(23 downto 0);
  constant rom_data: ROM_type:=(
-   "1000000110000000",  --need to change these
-   "0010110010001011",
-   "1100010000000011",
-   "0001000111000000",
-   "1110110110000001",
-   "1100000001111011",
-   "0000000000000000",
-   "0000000000000000",
-   "0000000000000000",
-   "0000000000000000",
-   "0000000000000000",
-   "0000000000000000",
-   "0000000000000000",
-   "0000000000000000",
-   "0000000000000000",
-   "0000000000000000"
+   X"B80002",  --need to change these
+   X"B84001",
+   X"60400f",
+   X"69400f",
+   X"800200",
+   X"890a00",
+   X"a00200",
+   X"a80200",
+   X"800200",
+   X"914000",
+   X"50CA00",
+   X"000000",
+   X"B80002",
+   X"B80002",
+   X"B80002",
+   X"B80002"
   );
 begin
 
- rom_addr <= pc(4 downto 1);
- instruction <= rom_data(to_integer(unsigned(rom_addr))) when pc < x"0020" else x"0000";
+ rom_addr <= pc(3 downto 0);
+ instruction <= rom_data(to_integer(unsigned(rom_addr)));
 
 end Behavioral;

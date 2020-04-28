@@ -39,8 +39,8 @@ entity ALU is
         SrcAin : in std_logic_vector(23 downto 0);
         SrcAout: out std_logic_vector(23 downto 0);
         SrcBin : in std_logic_vector(23 downto 0);
-        SrcBout: out std_logic_vector(23 downto 0);
-        ALU_OUT : in std_logic_vector(23 downto 0)
+        SrcBout: out std_logic_vector(23 downto 0)
+        --ALU_OUT : in std_logic_vector(23 downto 0)
         );
 end ALU;
 
@@ -48,7 +48,7 @@ architecture Behavioral of ALU is
 
 begin
 
-process(opcode)
+process(clk)
 begin
 if(clk'event and clk = '1' ) then
 case (opcode) is
@@ -63,7 +63,7 @@ case (opcode) is
         --when "01101" => SrcAout <=  --MMS
         when "10000" => SrcAout <= SrcAin + SrcBin; --ADD 
         when "10001" => SrcAout <= SrcAin - SrcBin; --SUB 
-        when "10010" => SrcAout <= std_logic_vector(signed(SrcAin) * signed(SrcBin)); --MUL 
+        --when "10010" => SrcAout <= std_logic_vector(signed(SrcAin) * signed(SrcBin)); --MUL 
         when "10011" => SrcAout <= std_logic_vector(signed(SrcAin) / signed(SrcBin)); --DIV 
         when "10100" => SrcAout <= srcAin AND srcBin; --and
         when "10101" => SrcAout <= srcAin OR srcBin; --or

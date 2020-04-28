@@ -83,8 +83,20 @@ begin
             when "111"  => RB <= R7;  
        end case;
               
-    end if;   
+    end if; 
+    if RA_Enable = '1' then
+        case RA_ADDR is
+            when "000"  => R0 <= RA_DATA_IN;
+            when "001"  => R1 <= RA_DATA_IN;
+            when "010"  => R2 <= RA_DATA_IN;
+            when "011"  => R3 <= RA_DATA_IN;
+            when "100"  => R4 <= RA_DATA_IN;
+            when "101"  => R5 <= RA_DATA_IN;
+            when "110"  => R6 <= RA_DATA_IN;
+            when "111"  => R7 <= RA_DATA_IN; 
+       end case;
+              
+    end if; 
 end process;
 
-RA <= RA_data_in when(Ra_enable = '1');
 end Behavioral;

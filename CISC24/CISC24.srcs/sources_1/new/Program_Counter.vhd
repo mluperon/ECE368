@@ -42,14 +42,14 @@ end Program_Counter;
 architecture Behavioral of Program_Counter is
 signal PC : std_logic_vector(8 downto 0);
 begin
-process(clk)
+process(clk,reset)
     begin
-        if(clk'event and clk='1' and reset = '0') then
+        if(falling_edge(clk) and reset = '0') then
             PC <= PC + '1';
         end if;
         if(reset = '1') then
             PC <= "000000000";
         end if;
 end process;
-
+PCount <= PC;
 end Behavioral;
