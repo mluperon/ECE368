@@ -32,7 +32,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity GeneralPurposeReg is
-Port ( RA_addr : in std_logic_vector(2 downto 0);
+Port ( clk : in std_logic;
+       RA_addr : in std_logic_vector(2 downto 0);
        RB_addr : in std_logic_vector(2 downto 0);
        RA_enable : in std_logic;
        RA_data_in : in std_logic_vector(23 downto 0);
@@ -57,8 +58,9 @@ begin
 RA_out<= RA;
 RB_out<= RB;
 
-process(RA_enable, RA_addr) 
+process(clk) 
 begin
+if (clk'event and clk = '1')then
     if RA_enable = '0' then 
     
         case RA_addr is
@@ -97,6 +99,7 @@ begin
        end case;
               
     end if; 
+    end if;
 end process;
 
 end Behavioral;

@@ -32,24 +32,23 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity MMU is
-  Port ( 
-  clk:  in Std_logic;
-  address_in:  in std_logic_vector(19 downto 0);
-  ram_address: in std_logic_vector(19 downto 0);
-  ram_data:    in std_logic_vector(7 downto 0); 
-  enable:      in std_logic; 	
-  IMM_OOP	: in STD_LOGIC_VECTOR(23 downto 0);
-  IMM_TOP	: in STD_LOGIC_VECTOR(23 downto 0);
-  IMM_MEM  : in STD_LOGIC_VECTOR(23 downto 0);
-  IMM_BRN  : in STD_LOGIC_VECTOR(23 downto 0);
-  MSK		: in STD_LOGIC_VECTOR(3  downto 0);
-  reset:       in std_logic);
-end MMU;
+  Port (clk        :  in Std_logic;   
+        enable     : in std_logic; 	
+        reset      : in std_logic;
+        address_in : in std_logic_vector(15 downto 0); --input addresses for memory fetch
+        address_out: out std_logic_vector(7 downto 0); --output memory address
+        data_in    : in std_logic_vector(7 downto 0); 
+  --ram_address: in std_logic_vector(19 downto 0);
+  --IMM_OOP	 : in STD_LOGIC_VECTOR(23 downto 0);
+  --IMM_TOP	 : in STD_LOGIC_VECTOR(23 downto 0);
+  --IMM_MEM    : in STD_LOGIC_VECTOR(23 downto 0);
+  --IMM_BRN    : in STD_LOGIC_VECTOR(23 downto 0);
+  --MSK		 : in STD_LOGIC_VECTOR(3  downto 0);
 
+end MMU;
 
 architecture Behavioral of MMU is
 
-begin
 
 
 end Behavioral;

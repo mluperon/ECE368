@@ -30,7 +30,6 @@ entity Control_Block is
   LED : out STD_LOGIC_VECTOR(15 downto 0);
   CLK : in STD_LOGIC;
   RESET: in STD_LOGIC
-  --ATEST : out STD_LOGIC_VECTOR(3 downto 0)
   );
 end Control_Block;
 

@@ -40,14 +40,7 @@ Port (  clk : in std_logic;
         ADDR_A   : in STD_LOGIC_VECTOR(2 downto 0);
 		ADDR_B   : in STD_LOGIC_VECTOR(2 downto 0);
 		ATEST : out STD_LOGIC_VECTOR(3 downto 0);
---		AM_A		: in STD_LOGIC_VECTOR(1 downto 0);
---		AM_B		: in STD_LOGIC_VECTOR(1 downto 0);
---		IMM_OOP	: in STD_LOGIC_VECTOR(23 downto 0);
---		IMM_TOP	: in STD_LOGIC_VECTOR(23 downto 0);
---		IMM_MEM  : in STD_LOGIC_VECTOR(23 downto 0);
 		IMMED 		: in STD_LOGIC_VECTOR(23 downto 0)
---		IMM_BRN  : in STD_LOGIC_VECTOR(23 downto 0);
---		MSK		: in STD_LOGIC_VECTOR(3  downto 0)
 );
 end ALU_Control_Block;
 
@@ -82,7 +75,8 @@ component BSrc_Reg is
         );
 end component ;
 component GeneralPurposeReg is
-Port ( RA_addr : in std_logic_vector(2 downto 0);
+Port ( clk : in std_logic;
+       RA_addr : in std_logic_vector(2 downto 0);
        RB_addr : in std_logic_vector(2 downto 0);
        RA_enable : in std_logic;
        RA_data_in : in std_logic_vector(23 downto 0);
@@ -96,18 +90,27 @@ signal SrcAin : std_logic_vector(23 downto 0);
 signal SrcAout: std_logic_vector(23 downto 0);
 signal SrcBin : std_logic_vector(23 downto 0);
 signal SrcBout: std_logic_vector(23 downto 0);
+signal RA_data_in : std_logic_vector(23 downto 0);
 signal RA_enable : std_logic;
-signal Timer: std_logic_vector(9 downto 0);
 --signal ALU_OUT : std_logic_vector(23 downto 0);
-
+TYPE State_type IS (reset, fetch, execute, store);
+	SIGNAL State : State_Type;   
 begin
 process(subclk)
 begin
-    if (subclk'event and subclk = '1' and clk ='1')then
-        timer <= timer + '1';
-    end if;
-    if(clk'event and clk = '0') then
-        timer <= "0000000000";
+    if(subclk'event and subclk = '1' and clk='1') then
+        case state is
+            when reset =>
+                RA_enable<= '0';
+                state <= fetch;
+            when fetch =>
+                state <= execute;
+            when execute=>
+                state <= store;
+                Ra_data_in <= SrcAout;
+            when store=>
+                RA_enable <= '1';
+        end case;
     end if;
 end process;
 C1: ALU port map(   CLK=>CLK,
@@ -119,28 +122,18 @@ C1: ALU port map(   CLK=>CLK,
                     srcBout => srcBout
                     --ALU_out => ALU_out
                 );
-C2: GeneralPurposeReg port map( RA_addr => ADDR_A,
+C2: GeneralPurposeReg port map( clk => clk,
+                                RA_addr => ADDR_A,
                                 RB_addr => ADDR_B,
                                 RA_enable => RA_enable, --write enable to RA set to 1 temporarily
-                                RA_data_in => srcAout,
+                                RA_data_in => RA_data_in,
                                 RA_out => Aout,
                                 Rb_out => Bout);
 C3: ASrc_Reg port map(  Aout => Aout,
                         ALU_A => srcAin);
 C4: BSrc_Reg port map(  Bout => Bout,
                         ALU_B => srcBin);
-process(SRCAOUT)
-begin
-if (SRCAIN /= SRCAOUT) then
-    RA_enable <= '1' ;
-end if;
-end process;
-process(Timer(5))
-begin
-if(Timer(5)'event and Timer(5) = '1')then
-    RA_enable <= '0';
-end if;
-end process;
+
 
 ATEST <= srcAout(3 downto 0);
 end Behavioral ;

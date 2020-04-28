@@ -53,25 +53,26 @@ signal Mode : std_logic_vector(1 downto 0);
 begin
 Instruction <= InstructionIN;
 --with Instruction(23 downto 19) select mode <=
---    "00" when "00000",
---    "00" when "00100",
---    "00" when "00101",
---    "00" when "00110",
---    "00" when "00111",
---    "00" when "01000",
---    "00" when "01001",
---    "01" when "01010",
---    "00" when "01011",--mem
---    "00" when "01100",--mem
---    "00" when "01101",--mem
---    "01" when "10000",
---    "01" when "10001",
---    "01" when "10010",
---    "01" when "10011",
---    "01" when "10100",
---    "01" when "10110",
---    "01" when "10111",
---    "00" when "11000",
+--    "00" when "00000", -- HALT
+--    "00" when "00100", -- CLR
+--    "00" when "00101", -- INC
+--    "00" when "00110", -- DEC
+--    "00" when "00111", -- NEG
+--    "00" when "01000", -- SLL
+--    "00" when "01001", -- SRL
+--    "01" when "01010", -- MVS
+--    "00" when "01011", -- (mem) MVMI 
+--    "00" when "01100", -- (mem) MSM
+--    "00" when "01101", -- (mem) MMS
+--    "01" when "10000", -- ADD
+--    "01" when "10001", -- SUB
+--    "01" when "10010", -- MUL
+--    "01" when "10011", -- DIV
+--    "01" when "10100", -- AND
+--    "01" when "10101", -- OR
+--    "01" when "10110", -- XOR
+--    "01" when "10111", -- ADDI
+--    "00" when "11000", -- SUBI
 --    "00" when others;
 process (CLK)
     begin			
