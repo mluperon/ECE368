@@ -32,7 +32,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity MMU is
-  Port (clk        :  in Std_logic;   
+  Port (clk        : in Std_logic;   
         enable     : in std_logic; 	
         reset      : in std_logic;
         address_in : in std_logic_vector(15 downto 0); --input addresses for memory fetch
