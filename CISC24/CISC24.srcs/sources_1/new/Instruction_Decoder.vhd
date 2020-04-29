@@ -73,7 +73,11 @@ Instruction <= InstructionIN;
 --    "01" when "10110", -- XOR
 --    "01" when "10111", -- ADDI
 --    "00" when "11000", -- SUBI
+<<<<<<< HEAD
 --    "00" when others;  
+=======
+--    "00" when others;
+>>>>>>> adeead18032e46e211b4606e8a7abee04a541fa7
 process (CLK)
     begin			
         if (CLK'event and CLK='1') then	

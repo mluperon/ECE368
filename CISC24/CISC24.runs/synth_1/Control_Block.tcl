@@ -18,6 +18,9 @@ proc create_report { reportName command } {
   }
 }
 set_param chipscope.maxJobs 1
+set_param synth.incrementalSynthesisCache C:/Users/paiva/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-1656-DESKTOP-5G5DH1Q/incrSyn
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -39,6 +42,8 @@ read_vhdl -library xil_defaultlib {
   C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/Instruction_Decoder.vhd
   C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/Instruction_Memory.vhd
   C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/Instruction_REG.vhd
+  C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/MMU.vhd
+  C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/Memory.vhd
   C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/Program_Counter.vhd
   C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/Top_Control_Block.vhd
 }

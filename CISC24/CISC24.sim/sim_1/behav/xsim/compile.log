@@ -1,0 +1,26 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/ALU_Control_Block.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU_Control_Block'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/ASrc_Reg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ASrc_Reg'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/BSrc_Reg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'BSrc_Reg'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/GeneralPurposeReg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'GeneralPurposeReg'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/Instruction_Control_Block.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Instruction_Control_Block'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/Instruction_Decoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Instruction_Decoder'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/Instruction_Memory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Instruction_Memory'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/Instruction_REG.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Instruction_REG'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/MMU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MMU'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/Memory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Memory'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/Program_Counter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Program_Counter'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/Top_Control_Block.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Control_Block'

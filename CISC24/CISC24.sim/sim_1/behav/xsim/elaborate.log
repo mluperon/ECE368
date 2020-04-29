@@ -1,0 +1,7 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: K:/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 96a7493a1bc546fc93f37cb35b81f626 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Control_Block_behav xil_defaultlib.Control_Block -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2335] case statement does not cover all choices. 'others' clause is needed [C:/Users/paiva/OneDrive/Desktop/ECE_368/CISC24/ECE368/CISC24/CISC24.srcs/sources_1/new/GeneralPurposeReg.vhd:66]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit control_block in library work failed.

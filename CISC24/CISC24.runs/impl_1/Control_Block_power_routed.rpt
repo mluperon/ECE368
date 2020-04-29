@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Tue Apr 28 11:14:07 2020
+| Date             : Tue Apr 28 18:48:18 2020
 | Host             : DESKTOP-5G5DH1Q running 64-bit major release  (build 9200)
 | Command          : report_power -file Control_Block_power_routed.rpt -pb Control_Block_power_summary_routed.pb -rpx Control_Block_power_routed.rpx
 | Design           : Control_Block
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.110        |
+| Total On-Chip Power (W)  | 0.148        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.013        |
+| Dynamic (W)              | 0.051        |
 | Device Static (W)        | 0.097        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 84.5         |
-| Junction Temperature (C) | 25.5         |
+| Max Ambient (C)          | 84.3         |
+| Junction Temperature (C) | 25.7         |
 | Confidence Level         | Medium       |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,16 +52,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |       57 |       --- |             --- |
-|   LUT as Logic |    <0.001 |        9 |     63400 |            0.01 |
-|   Register     |    <0.001 |       36 |    126800 |            0.03 |
-|   CARRY4       |    <0.001 |        7 |     15850 |            0.04 |
-|   Others       |     0.000 |        2 |       --- |             --- |
-| Signals        |    <0.001 |       45 |       --- |             --- |
-| I/O            |     0.012 |       18 |       210 |            8.57 |
+| Clocks         |     0.003 |        3 |       --- |             --- |
+| Slice Logic    |     0.011 |     1579 |       --- |             --- |
+|   LUT as Logic |     0.010 |      932 |     63400 |            1.47 |
+|   CARRY4       |     0.001 |      199 |     15850 |            1.26 |
+|   Register     |    <0.001 |      348 |    126800 |            0.27 |
+|   F7/F8 Muxes  |    <0.001 |       24 |     63400 |            0.04 |
+|   Others       |     0.000 |        9 |       --- |             --- |
+| Signals        |     0.014 |     1350 |       --- |             --- |
+| I/O            |     0.023 |       18 |       210 |            8.57 |
 | Static Power   |     0.097 |          |           |                 |
-| Total          |     0.110 |          |           |                 |
+| Total          |     0.148 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,9 +72,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.016 |       0.001 |      0.015 |
-| Vccaux    |       1.800 |     0.019 |       0.000 |      0.018 |
-| Vcco33    |       3.300 |     0.007 |       0.003 |      0.004 |
+| Vccint    |       1.000 |     0.043 |       0.028 |      0.015 |
+| Vccaux    |       1.800 |     0.019 |       0.001 |      0.018 |
+| Vcco33    |       3.300 |     0.011 |       0.007 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -140,7 +141,12 @@ Table of Contents
 +---------------+-----------+
 | Name          | Power (W) |
 +---------------+-----------+
-| Control_Block |     0.013 |
+| Control_Block |     0.051 |
+|   A           |     0.003 |
+|     C4        |     0.003 |
+|   B           |     0.024 |
+|     C1        |     0.016 |
+|     C2        |     0.007 |
 +---------------+-----------+
 
 
