@@ -374,3 +374,505 @@ selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sourc
 selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd), C : MMU(Behavioral) (MMU.vhd)]", 4, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
 // Elapsed time: 347 seconds
 selectCodeEditor("MMU.vhd", 61, 254); // ch (w, cr)
+// Elapsed time: 68 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd), A : Instruction_Control_Block(structural) (Instruction_Control_Block.vhd)]", 2, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd), B : ALU_Control_Block(Behavioral) (ALU_Control_Block.vhd)]", 3, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd), A : Instruction_Control_Block(structural) (Instruction_Control_Block.vhd)]", 2, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd), C : MMU(Behavioral) (MMU.vhd)]", 4, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd), C : MMU(Behavioral) (MMU.vhd), C1 : Memory(Behavioral) (Memory.vhd)]", 5, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources]", 7, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, ALU_Data_Reg.vhd]", 8, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, Dst_Addr_Reg.vhd]", 9, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, Instr_Decoder_2.vhd]", 10, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd), C : MMU(Behavioral) (MMU.vhd), C1 : Memory(Behavioral) (Memory.vhd)]", 5, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd), C : MMU(Behavioral) (MMU.vhd), C1 : Memory(Behavioral) (Memory.vhd)]", 5, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Test.vhd", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Memory.vhd", 4); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Test.vhd", 1); // i (h, cr)
+selectCodeEditor("Test.vhd", 73, 386); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Memory.vhd", 4); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Test.vhd", 1); // i (h, cr)
+// Elapsed time: 14 seconds
+selectCodeEditor("Test.vhd", 73, 240); // ch (w, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd), C : MMU(Behavioral) (MMU.vhd)]", 4, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd), C : MMU(Behavioral) (MMU.vhd)]", 4, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectCodeEditor("MMU.vhd", 319, 247); // ch (w, cr)
+// Elapsed time: 22 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (f, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 50 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Memory.vhd", 4); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MMU.vhd", 3); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RAM.vhd", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MMU.vhd", 3); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Memory.vhd", 4); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MMU.vhd", 3); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RAM.vhd", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Memory.vhd", 4); // i (h, cr)
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RAM_TB(Behavioral) (Test.vhd)]", 5, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RAM_TB(Behavioral) (Test.vhd)]", 5, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RAM_TB(Behavioral) (Test.vhd)]", 5, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Memory.vhd", 4); // i (h, cr)
+selectCodeEditor("Memory.vhd", 140, 142); // ch (w, cr)
+selectCodeEditor("Memory.vhd", 381, 162); // ch (w, cr)
+selectCodeEditor("Memory.vhd", 259, 143); // ch (w, cr)
+selectCodeEditor("Memory.vhd", 376, 164); // ch (w, cr)
+selectCodeEditor("Memory.vhd", 388, 161); // ch (w, cr)
+selectCodeEditor("Memory.vhd", 75, 156, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ai (ao, Popup.HeavyWeightWindow)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Test.vhd", 1); // i (h, cr)
+selectCodeEditor("Test.vhd", 84, 92); // ch (w, cr)
+selectCodeEditor("Test.vhd", 192, 239); // ch (w, cr)
+selectCodeEditor("Test.vhd", 204, 208); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Memory.vhd", 4); // i (h, cr)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Memory.vhd", 4, true, false); // i (h, cr) - Popup Trigger
+selectMenuItem(RDIResource.BaseWorkspace_FLOAT, "Float"); // ai (cr)
+floatFrame(PAResourceOtoP.PAViews_CODE, "Memory.vhd"); // aA (aL, cr)
+selectButton(RDIResourceCommand.RDICommands_COPY, (String) null); // E (f, aN)
+// Elapsed time: 17 seconds
+selectCodeEditor("Memory.vhd", 660, 597); // ch (w, aN)
+selectCodeEditor("MMU.vhd", 348, 319); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Test.vhd", 1); // i (h, cr)
+selectCodeEditor("Test.vhd", 261, 207); // ch (w, cr)
+selectCodeEditor("Test.vhd", 75, 250); // ch (w, cr)
+selectCodeEditor("Test.vhd", 118, 227); // ch (w, cr)
+selectCodeEditor("Test.vhd", 282, 219); // ch (w, cr)
+// Elapsed time: 16 seconds
+selectCodeEditor("Test.vhd", 55, 127); // ch (w, cr)
+// Elapsed time: 11 seconds
+selectCodeEditor("Test.vhd", 390, 229); // ch (w, cr)
+selectCodeEditor("Test.vhd", 249, 143); // ch (w, cr)
+selectCodeEditor("Test.vhd", 336, 109); // ch (w, cr)
+selectCodeEditor("Test.vhd", 77, 131); // ch (w, cr)
+selectCodeEditor("Test.vhd", 364, 127); // ch (w, cr)
+selectCodeEditor("Test.vhd", 30, 127, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ai (ao, cr)
+selectCodeEditor("Test.vhd", 228, 99); // ch (w, cr)
+typeControlKey((HResource) null, "Test.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("Test.vhd", 100, 93); // ch (w, cr)
+selectCodeEditor("Test.vhd", 104, 92, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Test.vhd", 105, 92); // ch (w, cr)
+selectCodeEditor("Test.vhd", 102, 96, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Test.vhd", 59, 95); // ch (w, cr)
+selectCodeEditor("Test.vhd", 39, 95); // ch (w, cr)
+// Elapsed time: 11 seconds
+selectCodeEditor("Test.vhd", 300, 81); // ch (w, cr)
+selectCodeEditor("Test.vhd", 338, 77); // ch (w, cr)
+// Elapsed time: 14 seconds
+selectCodeEditor("Test.vhd", 317, 204); // ch (w, cr)
+selectCodeEditor("Test.vhd", 337, 161); // ch (w, cr)
+selectCodeEditor("Test.vhd", 235, 209); // ch (w, cr)
+selectCodeEditor("Test.vhd", 62, 300); // ch (w, cr)
+selectCodeEditor("Test.vhd", 70, 300); // ch (w, cr)
+selectCodeEditor("Test.vhd", 73, 300, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Test.vhd", 83, 297); // ch (w, cr)
+selectCodeEditor("Test.vhd", 74, 299); // ch (w, cr)
+selectCodeEditor("Test.vhd", 126, 271); // ch (w, cr)
+selectCodeEditor("Test.vhd", 349, 301); // ch (w, cr)
+selectCodeEditor("Test.vhd", 125, 297, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ai (ao, Popup.HeavyWeightWindow)
+selectCodeEditor("Test.vhd", 165, 265); // ch (w, cr)
+selectCodeEditor("Test.vhd", 165, 264, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ai (ao, Popup.HeavyWeightWindow)
+selectCodeEditor("Test.vhd", 245, 280); // ch (w, cr)
+selectCodeEditor("Test.vhd", 247, 267); // ch (w, cr)
+selectCodeEditor("Test.vhd", 247, 267, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ai (ao, Popup.HeavyWeightWindow)
+selectCodeEditor("Test.vhd", 262, 275); // ch (w, cr)
+selectCodeEditor("Test.vhd", 245, 263); // ch (w, cr)
+selectCodeEditor("Test.vhd", 335, 311); // ch (w, cr)
+selectCodeEditor("Test.vhd", 335, 311, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Test.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("Test.vhd", 139, 254); // ch (w, cr)
+selectCodeEditor("Test.vhd", 132, 264); // ch (w, cr)
+typeControlKey((HResource) null, "Test.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("Test.vhd", 387, 354); // ch (w, cr)
+selectCodeEditor("Test.vhd", 271, 185); // ch (w, cr)
+selectCodeEditor("Test.vhd", 81, 123); // ch (w, cr)
+selectCodeEditor("Test.vhd", 306, 170); // ch (w, cr)
+// Elapsed time: 18 seconds
+selectCodeEditor("Test.vhd", 323, 130); // ch (w, cr)
+selectCodeEditor("Test.vhd", 307, 130); // ch (w, cr)
+selectCodeEditor("Test.vhd", 344, 187); // ch (w, cr)
+selectCodeEditor("Test.vhd", 59, 320); // ch (w, cr)
+selectCodeEditor("Test.vhd", 137, 309); // ch (w, cr)
+selectCodeEditor("Test.vhd", 136, 316); // ch (w, cr)
+selectCodeEditor("Test.vhd", 136, 317, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Test.vhd", 135, 317); // ch (w, cr)
+selectCodeEditor("Test.vhd", 217, 384); // ch (w, cr)
+selectCodeEditor("Test.vhd", 136, 315); // ch (w, cr)
+selectCodeEditor("Test.vhd", 209, 328); // ch (w, cr)
+selectCodeEditor("Test.vhd", 97, 337); // ch (w, cr)
+selectCodeEditor("Test.vhd", 101, 331); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectCodeEditor("Test.vhd", 176, 312); // ch (w, cr)
+selectCodeEditor("Test.vhd", 101, 211); // ch (w, cr)
+selectCodeEditor("Test.vhd", 95, 210); // ch (w, cr)
+selectCodeEditor("Test.vhd", 105, 208); // ch (w, cr)
+typeControlKey((HResource) null, "Test.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("Test.vhd", 95, 329); // ch (w, cr)
+selectCodeEditor("Test.vhd", 207, 319); // ch (w, cr)
+typeControlKey((HResource) null, "Test.vhd", 'v'); // ch (w, cr)
+// Elapsed time: 17 seconds
+selectCodeEditor("Test.vhd", 239, 380); // ch (w, cr)
+selectCodeEditor("Test.vhd", 53, 416); // ch (w, cr)
+selectCodeEditor("Test.vhd", 60, 261); // ch (w, cr)
+selectCodeEditor("Test.vhd", 112, 324); // ch (w, cr)
+selectCodeEditor("Test.vhd", 51, 261); // ch (w, cr)
+selectCodeEditor("Test.vhd", 57, 267); // ch (w, cr)
+selectCodeEditor("Test.vhd", 92, 227); // ch (w, cr)
+// Elapsed time: 13 seconds
+selectCodeEditor("Test.vhd", 212, 361); // ch (w, cr)
+selectCodeEditor("Test.vhd", 112, 397); // ch (w, cr)
+selectCodeEditor("Test.vhd", 61, 384); // ch (w, cr)
+selectCodeEditor("Test.vhd", 53, 382); // ch (w, cr)
+selectCodeEditor("Test.vhd", 66, 405); // ch (w, cr)
+selectCodeEditor("Test.vhd", 104, 381); // ch (w, cr)
+selectCodeEditor("Test.vhd", 144, 399); // ch (w, cr)
+selectCodeEditor("Test.vhd", 58, 95); // ch (w, cr)
+selectCodeEditor("Test.vhd", 63, 95); // ch (w, cr)
+selectCodeEditor("Test.vhd", 97, 96); // ch (w, cr)
+selectCodeEditor("Test.vhd", 134, 242); // ch (w, cr)
+selectCodeEditor("Test.vhd", 78, 163); // ch (w, cr)
+typeControlKey((HResource) null, "Test.vhd", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "Test.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("Test.vhd", 54, 317); // ch (w, cr)
+typeControlKey((HResource) null, "Test.vhd", 'v'); // ch (w, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 853 MB. GUI used memory: 50 MB. Current time: 5/1/20, 11:32:52 AM EDT
+// Elapsed time: 74 seconds
+selectCodeEditor("Test.vhd", 56, 375); // ch (w, cr)
+selectCodeEditor("Test.vhd", 58, 367); // ch (w, cr)
+selectCodeEditor("Test.vhd", 30, 362); // ch (w, cr)
+selectCodeEditor("Test.vhd", 30, 362, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Test.vhd", 50, 365); // ch (w, cr)
+selectCodeEditor("Test.vhd", 50, 365, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Test.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("Test.vhd", 37, 414); // ch (w, cr)
+selectCodeEditor("Test.vhd", 37, 414, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Test.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("Test.vhd", 49, 471); // ch (w, cr)
+selectCodeEditor("Test.vhd", 49, 471, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Test.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("Test.vhd", 38, 515); // ch (w, cr)
+selectCodeEditor("Test.vhd", 38, 515, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Test.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("Test.vhd", 48, 574); // ch (w, cr)
+selectCodeEditor("Test.vhd", 48, 574, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Test.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("Test.vhd", 47, 488); // ch (w, cr)
+selectCodeEditor("Test.vhd", 47, 488, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Test.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("Test.vhd", 43, 539); // ch (w, cr)
+selectCodeEditor("Test.vhd", 43, 539, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Test.vhd", 'v'); // ch (w, cr)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (f, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Test.vhd", 218, 598); // ch (w, cr)
+selectCodeEditor("Test.vhd", 126, 414, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ai (ao, Popup.HeavyWeightWindow)
+// Elapsed time: 241 seconds
+selectCodeEditor("Test.vhd", 250, 327); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // i (h, cr)
+// Elapsed time: 16 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RAM_TB(Behavioral) (Test.vhd)]", 5); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RAM_TB(Behavioral) (Test.vhd)]", 5); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd)]", 1, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+selectCodeEditor("Test.vhd", 373, 131); // ch (w, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, ALU_Data_Reg.vhd]", 8, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, Dst_Addr_Reg.vhd]", 9, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, Instr_Decoder_2.vhd]", 10, false); // B (F, cr)
+// PAPropertyPanels.initPanels (Instruction_Phase_Controller.vhd) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, Instruction_Phase_Controller.vhd]", 11, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, RAM.vhd]", 12, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, Instruction_Phase_Controller.vhd]", 11, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, Instr_Decoder_2.vhd]", 10, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, Instruction_Phase_Controller.vhd]", 11, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, Instruction_Phase_Controller.vhd]", 11, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, Instruction_Phase_Controller.vhd]", 11, false, false, false, false, false, true); // B (F, cr) - Double Click
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources]", 7); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd), C : MMU(Behavioral) (MMU.vhd)]", 4); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd), B : ALU_Control_Block(Behavioral) (ALU_Control_Block.vhd)]", 3); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd), A : Instruction_Control_Block(structural) (Instruction_Control_Block.vhd)]", 2); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd), B : ALU_Control_Block(Behavioral) (ALU_Control_Block.vhd)]", 7, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd), A : Instruction_Control_Block(structural) (Instruction_Control_Block.vhd), C4 : Instruction_Decoder(Behavioral) (Instruction_Decoder.vhd)]", 6, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd), A : Instruction_Control_Block(structural) (Instruction_Control_Block.vhd), C4 : Instruction_Decoder(Behavioral) (Instruction_Decoder.vhd)]", 6, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd), A : Instruction_Control_Block(structural) (Instruction_Control_Block.vhd), C4 : Instruction_Decoder(Behavioral) (Instruction_Decoder.vhd)]", 6, false, false, false, false, false, true); // B (F, cr) - Double Click
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd)]", 1); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd)]", 1, true); // B (F, cr) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd)]", 1); // B (F, cr)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd), B : ALU_Control_Block(Behavioral) (ALU_Control_Block.vhd), C1 : ALU(Behavioral) (ALU.vhd)]", 8, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd), B : ALU_Control_Block(Behavioral) (ALU_Control_Block.vhd), C1 : ALU(Behavioral) (ALU.vhd)]", 8, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd), B : ALU_Control_Block(Behavioral) (ALU_Control_Block.vhd), C1 : ALU(Behavioral) (ALU.vhd)]", 8, false, false, false, false, false, true); // B (F, cr) - Double Click
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd), B : ALU_Control_Block(Behavioral) (ALU_Control_Block.vhd), C1 : ALU(Behavioral) (ALU.vhd)]", 8, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd), B : ALU_Control_Block(Behavioral) (ALU_Control_Block.vhd), C1 : ALU(Behavioral) (ALU.vhd)]", 8, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_NETLIST_BLOCK_DESIGN, "Add or create design sources"); // a (o, c)
+selectButton("NEXT", "Next >"); // JButton (j, c)
+// Elapsed time: 171 seconds
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (E, c)
+// F (c): Create Source File: addNotify
+// Elapsed time: 13 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "ALUTEST"); // ac (Q, F)
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "VHDL", 3); // cm (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectCheckBox(PAResourceQtoS.SrcChooserPanel_MAKE_LOCAL_COPY_OF_THESE_FILES_INTO, "Copy sources into project", false); // g (bm, c): FALSE
+selectCheckBox(PAResourceQtoS.SrcChooserPanel_ADD_SOURCES_FROM_SUBDIRECTORIES, "Add sources from subdirectories", false); // g (bm, c): FALSE
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 199 seconds
+dismissDialog("Add Sources"); // c (cr)
+// Tcl Message: close [ open C:/Users/Melan/Desktop/ECE368/CISC24/CISC24.srcs/sources_1/new/ALUTEST.vhd w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/Melan/Desktop/ECE368/CISC24/CISC24.srcs/sources_1/new/ALUTEST.vhd 
+// [Engine Memory]: 866 MB (+3kb) [01:11:04]
+// I (cr): Define Module: addNotify
+// Elapsed time: 18 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton (A, H)
+dismissDialog("Define Module"); // I (cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(PAResourceAtoD.AbstractFileView_CLOSE, (String) null); // k (B, aN)
+// PAResourceOtoP.PAViews_CODE: Code: close view
+closeFrame(PAResourceOtoP.PAViews_CODE, "Memory.vhd"); // aA (aL, aN)
+dockFrame(PAResourceOtoP.PAViews_CODE, "Memory.vhd"); // aA (aL, aN)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// Elapsed time: 38 seconds
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.vhd", 6, true, false); // i (h, cr) - Popup Trigger
+selectMenuItem(RDIResource.BaseWorkspace_FLOAT, "Float"); // ai (cr)
+floatFrame(PAResourceOtoP.PAViews_CODE, "ALU.vhd"); // aA (aL, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ALUTEST(Behavioral) (ALUTEST.vhd)]", 16, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ALUTEST(Behavioral) (ALUTEST.vhd)]", 16, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ALUTEST(Behavioral) (ALUTEST.vhd)]", 16, false, false, false, false, false, true); // B (F, cr) - Double Click
+// Elapsed time: 177 seconds
+selectCodeEditor("ALUTEST.vhd", 132, 277); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 100, 449); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 84, 470); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 258, 509); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 289, 506); // ch (w, cr)
+// Elapsed time: 13 seconds
+selectCodeEditor("ALU.vhd", 456, 261); // ch (w, aN)
+selectCodeEditor("ALU.vhd", 403, 314); // ch (w, aN)
+selectCodeEditor("ALU.vhd", 394, 321); // ch (w, aN)
+selectCodeEditor("ALU.vhd", 394, 321); // ch (w, aN)
+selectCodeEditor("ALU.vhd", 130, 228, false, false, false, true, false); // ch (w, aN) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ai (ao, aN)
+selectCodeEditor("ALUTEST.vhd", 189, 519); // ch (w, cr)
+typeControlKey((HResource) null, "ALUTEST.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 78, 402, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("ALUTEST.vhd", 47, 442); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 71, 399); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 80, 395); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 193, 465); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 4, 394); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 8, 402); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 268, 494); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 377, 514); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 460, 529); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 43, 574); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 84, 561); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 371, 508); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 51, 532); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 375, 513); // ch (w, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RAM_TB(Behavioral) (Test.vhd)]", 14, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RAM_TB(Behavioral) (Test.vhd)]", 14, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RAM_TB(Behavioral) (Test.vhd)]", 14, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Test.vhd", 1, true, false); // i (h, cr) - Popup Trigger
+selectMenuItem(RDIResource.BaseWorkspace_FLOAT, "Float"); // ai (cr)
+floatFrame(PAResourceOtoP.PAViews_CODE, "Test.vhd"); // aA (aL, cr)
+selectCodeEditor("Test.vhd", 172, 569); // ch (w, aN)
+// Elapsed time: 15 seconds
+selectCodeEditor("Test.vhd", 465, 651); // ch (w, aN)
+selectCodeEditor("Test.vhd", 144, 591); // ch (w, aN)
+selectCodeEditor("Test.vhd", 336, 620); // ch (w, aN)
+selectCodeEditor("Test.vhd", 61, 594); // ch (w, aN)
+selectCodeEditor("Test.vhd", 51, 590); // ch (w, aN)
+selectCodeEditor("Test.vhd", 66, 582); // ch (w, aN)
+selectCodeEditor("Test.vhd", 72, 584); // ch (w, aN)
+selectCodeEditor("Test.vhd", 289, 615); // ch (w, aN)
+selectCodeEditor("Test.vhd", 342, 433); // ch (w, aN)
+selectCodeEditor("Test.vhd", 515, 420); // ch (w, aN)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Instruction_Phase_Controller.vhd", 3); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Instruction_Decoder.vhd", 4); // i (h, cr)
+// Elapsed time: 417 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALUTEST.vhd", 5); // i (h, cr)
+// Elapsed time: 18 seconds
+selectCodeEditor("ALUTEST.vhd", 325, 456); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 401, 513); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 404, 505); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 409, 499); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 344, 534); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 289, 575); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 263, 565); // ch (w, cr)
+// Elapsed time: 218 seconds
+selectCodeEditor("ALUTEST.vhd", 188, 295); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 260, 280); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 338, 282); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 289, 269); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 336, 264); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 140, 265, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ai (ao, Popup.HeavyWeightWindow)
+selectCodeEditor("ALUTEST.vhd", 102, 466); // ch (w, cr)
+typeControlKey((HResource) null, "ALUTEST.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 243, 307); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 333, 278); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 136, 281, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ai (ao, Popup.HeavyWeightWindow)
+selectCodeEditor("ALUTEST.vhd", 150, 495); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 152, 487); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 148, 492, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ai (ao, Popup.HeavyWeightWindow)
+selectCodeEditor("ALUTEST.vhd", 302, 283); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 89, 502); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 52, 499, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ai (ao, Popup.HeavyWeightWindow)
+selectCodeEditor("ALUTEST.vhd", 41, 569); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 47, 569, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ai (ao, Popup.HeavyWeightWindow)
+selectCodeEditor("ALUTEST.vhd", 44, 586); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 46, 586, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ai (ao, Popup.HeavyWeightWindow)
+selectCodeEditor("ALUTEST.vhd", 76, 589); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectCodeEditor("ALUTEST.vhd", 337, 560); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("ALUTEST.vhd", 98, 448); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 102, 323); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 126, 296); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 140, 297); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 333, 296, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("ALUTEST.vhd", 254, 369); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 338, 295); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 149, 298, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ai (ao, Popup.HeavyWeightWindow)
+selectCodeEditor("ALUTEST.vhd", 168, 512); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 168, 502); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 168, 502, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ai (ao, Popup.HeavyWeightWindow)
+selectCodeEditor("ALUTEST.vhd", 313, 487); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 296, 524); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 296, 524); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 357, 349); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 192, 344); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 112, 346); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 141, 353); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 123, 330); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 137, 330); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 331, 332, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ai (ao, Popup.HeavyWeightWindow)
+selectCodeEditor("ALUTEST.vhd", 153, 529); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 155, 523); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 155, 523, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ai (ao, Popup.HeavyWeightWindow)
+// Elapsed time: 11 seconds
+selectCodeEditor("ALUTEST.vhd", 355, 560); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 269, 526); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 300, 527); // ch (w, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 868 MB. GUI used memory: 55 MB. Current time: 5/1/20, 12:02:52 PM EDT
+selectCodeEditor("Test.vhd", 514, 585); // ch (w, aN)
+selectCodeEditor("Test.vhd", 256, 523); // ch (w, aN)
+selectCodeEditor("ALUTEST.vhd", 130, 463); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 146, 300); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 339, 301, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ai (ao, Popup.HeavyWeightWindow)
+selectCodeEditor("ALUTEST.vhd", 133, 562); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 139, 551); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 138, 552, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ai (ao, Popup.HeavyWeightWindow)
+selectCodeEditor("ALUTEST.vhd", 171, 574); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 171, 574, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ai (ao, Popup.HeavyWeightWindow)
+selectCodeEditor("ALUTEST.vhd", 316, 560); // ch (w, cr)
+// Elapsed time: 432 seconds
+selectCodeEditor("ALUTEST.vhd", 94, 333); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 56, 331, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ai (ao, Popup.HeavyWeightWindow)
+selectCodeEditor("ALUTEST.vhd", 29, 528); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 33, 520); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 33, 520, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ai (ao, Popup.HeavyWeightWindow)
+selectCodeEditor("ALUTEST.vhd", 75, 350); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 89, 350); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 60, 346, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ai (ao, Popup.HeavyWeightWindow)
+selectCodeEditor("ALUTEST.vhd", 50, 530); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 44, 533, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ai (ao, Popup.HeavyWeightWindow)
+selectCodeEditor("ALUTEST.vhd", 95, 396); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 55, 402, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ai (ao, Popup.HeavyWeightWindow)
+selectCodeEditor("ALUTEST.vhd", 39, 559); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 39, 551, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ai (ao, Popup.HeavyWeightWindow)
+selectCodeEditor("ALUTEST.vhd", 96, 414); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 59, 417, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ai (ao, Popup.HeavyWeightWindow)
+selectCodeEditor("ALUTEST.vhd", 62, 572); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 62, 572, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ai (ao, Popup.HeavyWeightWindow)
+selectCodeEditor("ALUTEST.vhd", 126, 521); // ch (w, cr)
+// Elapsed time: 16 seconds
+selectCodeEditor("ALUTEST.vhd", 90, 330); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 73, 335, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ai (ao, Popup.HeavyWeightWindow)
+selectCodeEditor("ALUTEST.vhd", 128, 510); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 126, 518, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ai (ao, Popup.HeavyWeightWindow)
+selectCodeEditor("ALUTEST.vhd", 68, 342); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 87, 350); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 72, 353); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 94, 352); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 56, 351, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ai (ao, Popup.HeavyWeightWindow)
+selectCodeEditor("ALUTEST.vhd", 113, 536); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 113, 536, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ai (ao, Popup.HeavyWeightWindow)
+selectCodeEditor("ALUTEST.vhd", 98, 401); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 53, 400, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ai (ao, Popup.HeavyWeightWindow)
+selectCodeEditor("ALUTEST.vhd", 126, 548); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 126, 549, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ai (ao, Popup.HeavyWeightWindow)
+selectCodeEditor("ALUTEST.vhd", 96, 364); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 89, 353); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 55, 350, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ai (ao, Popup.HeavyWeightWindow)
+selectCodeEditor("ALUTEST.vhd", 121, 582); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 128, 570); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 128, 570, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ai (ao, Popup.HeavyWeightWindow)
+selectCodeEditor("ALUTEST.vhd", 95, 568); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 96, 548); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 92, 533); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 146, 519); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 185, 460); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 173, 572); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 352, 517); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 92, 436); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 57, 604); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 6, 606); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 41, 445); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 37, 451); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 258, 604); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 132, 463); // ch (w, cr)
+// Elapsed time: 25 seconds
+selectCodeEditor("ALUTEST.vhd", 97, 564); // ch (w, cr)
+selectCodeEditor("ALUTEST.vhd", 63, 592); // ch (w, cr)
+// Elapsed time: 256 seconds
+selectCodeEditor("Test.vhd", 182, 864, false, false, false, true, false); // ch (w, aN) - Popup Trigger

@@ -55,6 +55,7 @@ end component;
 signal address: STD_LOGIC_VECTOR(7 downto 0) :=  (others=>'0');
 signal WE: std_logic:= '0';
 signal data_in: STD_LOGIC_VECTOR( 7 downto 0);
+signal clk: STD_LOGIC;
 
 --outputs
 signal data_out: STD_LOGIC_VECTOR( 7 downto 0);
@@ -62,6 +63,7 @@ signal data_out: STD_LOGIC_VECTOR( 7 downto 0);
 begin
 
 uut: MEMORY PORT MAP (
+    clk => clk,
     address => address,
     data_in => data_in,
     data_out => data_out,
