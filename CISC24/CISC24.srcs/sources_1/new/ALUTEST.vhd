@@ -21,6 +21,7 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use work.all;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -37,7 +38,45 @@ end ALUTEST;
 
 architecture Behavioral of ALUTEST is
 
+component ALU is
+ Port ( clk : in std_logic;
+        opcode : in std_logic_vector(4 downto 0);
+        immed : in std_logic_vector(23 downto 0);
+        SrcAin : in std_logic_vector(23 downto 0);
+        SrcAout: out std_logic_vector(23 downto 0);
+        SrcBin : in std_logic_vector(23 downto 0);
+        SrcBout: out std_logic_vector(23 downto 0));
+end component;
+
+--inputs 
+signal clk: STD_LOGIC;
+signal opcode:std_logic_vector(4 downto 0);
+signal immed: std_logic_vector(23 downto 0);
+signal SrcAin:std_logic_vector(23 downto 0);
+signal SrcBin:std_logic_vector(23 downto 0);
+
+--outputs
+signal SrcAout:std_logic_vector(23 downto 0);
+signal SrcBout:std_logic_vector(23 downto 0);
+
 begin
-
-
-end Behavioral;
+uut: ALU PORT MAP ( 
+    clk => clk,
+    opcode => opcode,
+    immed => immed,
+    SrcAin => SrcAin,
+    SrcBin => SrcBin,
+    SrcAout => SrcAout,
+    SrcBout => SrcBin
+    );
+    
+clk_process: process
+begin 
+    clk <='0';
+    wait for 10ns; 
+    clk <='1';
+    srcAin<="001100000000000000000101";
+    SrcBin<="110011100001001010000100";
+    opcode<="10000"; --should be adding
+    end process;
+    end;

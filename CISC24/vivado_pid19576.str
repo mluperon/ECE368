@@ -876,3 +876,18 @@ selectCodeEditor("ALUTEST.vhd", 97, 564); // ch (w, cr)
 selectCodeEditor("ALUTEST.vhd", 63, 592); // ch (w, cr)
 // Elapsed time: 256 seconds
 selectCodeEditor("Test.vhd", 182, 864, false, false, false, true, false); // ch (w, aN) - Popup Trigger
+// Elapsed time: 437 seconds
+selectCodeEditor("ALUTEST.vhd", 414, 359); // ch (w, cr)
+// Elapsed time: 20 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (f, aN)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 124 MB (+1242kb) [01:52:35]
+selectCodeEditor("Test.vhd", 327, 180); // ch (w, aN)
+// Elapsed time: 14 seconds
+selectCodeEditor("Test.vhd", 350, 340); // ch (w, aN)
+// Elapsed time: 14 seconds
+selectCodeEditor("Test.vhd", 434, 446); // ch (w, aN)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (f, aN)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
