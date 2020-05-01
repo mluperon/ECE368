@@ -70,13 +70,19 @@ uut: ALU PORT MAP (
     SrcBout => SrcBin
     );
     
-clk_process: process
-begin 
+CLK_PROCESS: Process
+begin    
+
     clk <='0';
-    wait for 10ns; 
+    wait for 10 ns; 
     clk <='1';
-    srcAin<="001100000000000000000101";
-    SrcBin<="110011100001001010000100";
+    srcAin<=x"000101";
+    SrcBin<=x"000010";
     opcode<="10000"; --should be adding
-    end process;
-    end;
+    wait for 10 ns;
+    ASSERT (srcAout = x"000111") -- if false issues report string
+    REPORT "Test 2 failed"
+    Severity Note;
+    
+end process;
+end behavioral;

@@ -33,9 +33,8 @@ use work.all;
 --use UNISIM.VComponents.all;
 
 entity RAM_TB is
---    Port ( 
---    Address
---    CLK: in STD_Logic;
+    Port ( 
+        CLK: in STD_Logic);
 end RAM_TB;
 
 architecture Behavioral of RAM_TB is
@@ -43,22 +42,21 @@ architecture Behavioral of RAM_TB is
 component MEMORY
 Port(
     --inputs 
-    address: IN STD_LOGIC_VECTOR(7 downto 0);
+    address: IN STD_LOGIC_VECTOR(9 downto 0);
     clk: in STD_LOGIC;
     WE: in STD_LOGIC;
-    data_in: in STD_LOGIC_VECTOR(7 DOWNTO 0);
+    data_in: in STD_LOGIC_VECTOR(23 DOWNTO 0);
     --outputs
-    data_out: out STD_LOGIC_VECTOR(7 DOWNTO 0));
+    data_out: out STD_LOGIC_VECTOR(23 DOWNTO 0));
 end component;
     
 --inputs 
-signal address: STD_LOGIC_VECTOR(7 downto 0) :=  (others=>'0');
+signal address: STD_LOGIC_VECTOR(9 downto 0) :=  (others=>'0');
 signal WE: std_logic:= '0';
-signal data_in: STD_LOGIC_VECTOR( 7 downto 0);
-signal clk: STD_LOGIC;
+signal data_in: STD_LOGIC_VECTOR( 23 downto 0);
 
 --outputs
-signal data_out: STD_LOGIC_VECTOR( 7 downto 0);
+signal data_out: STD_LOGIC_VECTOR( 23 downto 0);
 
 begin
 
@@ -72,30 +70,33 @@ uut: MEMORY PORT MAP (
     
 CLK_PROCESS: Process
 begin
+    WE<='1';
+    address<="000000001";
+    data_in<= x"000001";
+    wait for 10 ns;
     WE<='0';
-    address<="00000001";
-    data_in<= "00000001";
+    ASSERT (data_out = x"000001") -- if false issues report string
+    REPORT "Test 1 failed"
+    SEVERITY NOTE;
     wait for 10 ns;
-    address<="00000010"; 
-    data_in<= "00000010";
-    wait for 10 ns; 
-    address<="00000100"; 
-    data_in<= "00000100";
-    wait for 10 ns; 
-    address<="00001000"; 
-    data_in<= "00001000";
-    wait for 10 ns; 
-    address<="00010000"; 
-    data_in<= "00010000";
-    wait for 10 ns; 
-    address<="00100000"; 
-    data_in<= "00100000";
-    wait for 10 ns; 
-    address<="01000000"; 
-    data_in<= "01000000";
-    wait for 10 ns; 
-    address<="10000000"; 
-    data_in<= "10000000";
+    WE<='1';
+    address<="000000010";
+    data_in<= x"000010";
     wait for 10 ns;
+    WE<='0';
+    ASSERT (data_out = x"000010") -- if false issues report string
+    REPORT "Test 2 failed"
+    SEVERITY NOTE;
+    wait for 10 ns;
+    WE<='1';
+    address<="000000100";
+    data_in<= x"000100";
+    wait for 10 ns;
+    WE<='0';
+    ASSERT (data_out = x"000100") -- if false issues report string
+    REPORT "Test 3 failed"
+    SEVERITY NOTE;
+    wait for 10 ns;
+    
     end process;
 end Behavioral;
