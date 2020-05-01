@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Tue Apr 28 18:47:47 2020
+| Date         : Fri May  1 13:33:00 2020
 | Host         : DESKTOP-5G5DH1Q running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Control_Block_control_sets_placed.rpt
 | Design       : Control_Block
@@ -77,13 +77,13 @@ Table of Contents
 | ~clk           | A/C3/sel                | RESET_IBUF       |                3 |              9 |
 |  clk           |                         |                  |                3 |             10 |
 |  CLK_IBUF_BUFG | A/C4/RA_enable_reg_2[0] |                  |                9 |             24 |
-|  CLK_IBUF_BUFG | A/C4/RA_enable_reg_1[0] |                  |                9 |             24 |
-|  CLK_IBUF_BUFG | A/C4/RA_enable_reg_3[0] |                  |               13 |             24 |
 |  CLK_IBUF_BUFG | A/C4/RA_enable_reg_5[0] |                  |               11 |             24 |
+|  CLK_IBUF_BUFG | A/C4/RA_enable_reg_6[0] |                  |                9 |             24 |
+|  CLK_IBUF_BUFG | A/C4/RA_enable_reg_3[0] |                  |               13 |             24 |
+|  CLK_IBUF_BUFG | A/C4/RA_enable_reg[0]   |                  |               11 |             24 |
+|  CLK_IBUF_BUFG | A/C4/RA_enable_reg_1[0] |                  |                9 |             24 |
 |  CLK_IBUF_BUFG | A/C4/RA_enable_reg_0[0] |                  |               11 |             24 |
 |  CLK_IBUF_BUFG | A/C4/RA_enable_reg_4[0] |                  |               12 |             24 |
-|  CLK_IBUF_BUFG | A/C4/RA_enable_reg_6[0] |                  |                9 |             24 |
-|  CLK_IBUF_BUFG | A/C4/RA_enable_reg[0]   |                  |               11 |             24 |
 |  CLK_IBUF_BUFG | B/RA_data_in0           |                  |               10 |             24 |
 |  CLK_IBUF_BUFG |                         |                  |                8 |             28 |
 |  CLK_IBUF_BUFG | A/C4/E[0]               |                  |               17 |             28 |

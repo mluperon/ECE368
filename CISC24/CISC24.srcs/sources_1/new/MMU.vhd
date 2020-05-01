@@ -37,8 +37,8 @@ entity MMU is
         reset      : in std_logic;
         address_in : in std_logic_vector(9 downto 0); --input addresses for memory fetch
         address_out: out std_logic_vector(9 downto 0);
-        data_in    : in std_logic_vector(7 downto 0); --output memory address
-        data_out    : out std_logic_vector(7 downto 0)); 
+        data_in    : in std_logic_vector(23 downto 0); --output memory address
+        data_out    : out std_logic_vector(23 downto 0)); 
 end MMU;
 
 architecture Behavioral of MMU is

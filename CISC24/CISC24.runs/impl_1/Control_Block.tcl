@@ -68,7 +68,7 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 1
-  set_param synth.incrementalSynthesisCache C:/Users/paiva/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-1656-DESKTOP-5G5DH1Q/incrSyn
+  set_param synth.incrementalSynthesisCache C:/Users/paiva/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-8752-DESKTOP-5G5DH1Q/incrSyn
   create_project -in_memory -part xc7a100tcsg324-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
