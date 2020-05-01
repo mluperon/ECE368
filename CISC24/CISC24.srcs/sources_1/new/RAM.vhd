@@ -36,12 +36,13 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity RAM is
     Port ( address : in STD_LOGIC_VECTOR (19 downto 0);
-           data : out STD_LOGIC_VECTOR (7 downto 0));
+           data : out STD_LOGIC_VECTOR (7 downto 0)
+           WriteEnable: in STD_LOGIC);
 end RAM;
 
 architecture Behavioral of RAM is
 
-type memory_array is array (0 to 79) of std_logic_vector(7 downto 0);
+type memory_array is array (0 to 30) of std_logic_vector(7 downto 0);
 constant characters: memory_array := (
 
     "00000001",

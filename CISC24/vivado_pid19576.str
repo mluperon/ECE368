@@ -1,0 +1,376 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:40:23 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 19576
+License: Customer
+
+Current time: 	Fri May 01 10:32:29 EDT 2020
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 1,536 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Melan
+User home directory: C:/Users/Melan
+User working directory: C:/Users/Melan/Desktop/ECE368/CISC24
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.2
+RDI_DATADIR: C:/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: C:/Users/Melan/AppData/Roaming/Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: C:/Users/Melan/AppData/Roaming/Xilinx/Vivado/2019.2/
+Vivado layouts directory: C:/Users/Melan/AppData/Roaming/Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Melan/Desktop/ECE368/CISC24/vivado.log
+Vivado journal file location: 	C:/Users/Melan/Desktop/ECE368/CISC24/vivado.jou
+Engine tmp dir: 	C:/Users/Melan/Desktop/ECE368/CISC24/.Xil/Vivado-19576-Borrowed
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 577 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 87 MB (+88830kb) [00:00:19]
+// [Engine Memory]: 558 MB (+433576kb) [00:00:19]
+// bB (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Melan\Desktop\ECE368\CISC24\CISC24.xpr. Version: Vivado v2019.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/Melan/Desktop/ECE368/CISC24/CISC24.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 607 MB. GUI used memory: 47 MB. Current time: 5/1/20, 10:32:31 AM EDT
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/Melan/Desktop/ECE368/CISC24/CISC24.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 777 MB (+200220kb) [00:00:38]
+// [GUI Memory]: 93 MB (+1204kb) [00:00:39]
+// [Engine Memory]: 824 MB (+9094kb) [00:00:41]
+// WARNING: HEventQueue.dispatchEvent() is taking  4612 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 829 MB. GUI used memory: 51 MB. Current time: 5/1/20, 10:32:49 AM EDT
+// Tcl Message: open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 869.473 ; gain = 268.191 
+// Project name: CISC24; location: C:/Users/Melan/Desktop/ECE368/CISC24; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bB (cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 0); // B (F, cr)
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1, true); // B (F, cr) - Node
+// [GUI Memory]: 106 MB (+8920kb) [00:00:50]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// PAPropertyPanels.initPanels (Test.vhd) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, Test.vhd]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, Test.vhd]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, Test.vhd]", 2, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, Test.vhd]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, Test.vhd]", 2, false); // B (F, cr)
+// Elapsed time: 117 seconds
+selectCodeEditor("Test.vhd", 43, 339); // ch (w, cr)
+selectCodeEditor("Test.vhd", 79, 331); // ch (w, cr)
+// Elapsed time: 64 seconds
+selectCodeEditor("Test.vhd", 135, 351); // ch (w, cr)
+selectCodeEditor("Test.vhd", 182, 351); // ch (w, cr)
+selectCodeEditor("Test.vhd", 152, 350); // ch (w, cr)
+selectCodeEditor("Test.vhd", 234, 379); // ch (w, cr)
+selectCodeEditor("Test.vhd", 63, 370); // ch (w, cr)
+selectCodeEditor("Test.vhd", 72, 425); // ch (w, cr)
+selectCodeEditor("Test.vhd", 218, 404); // ch (w, cr)
+// Elapsed time: 78 seconds
+selectCodeEditor("Test.vhd", 103, 301); // ch (w, cr)
+selectCodeEditor("Test.vhd", 111, 333); // ch (w, cr)
+// Elapsed time: 19 seconds
+selectCodeEditor("Test.vhd", 164, 384); // ch (w, cr)
+selectCodeEditor("Test.vhd", 144, 346); // ch (w, cr)
+selectCodeEditor("Test.vhd", 105, 352); // ch (w, cr)
+// Elapsed time: 336 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, Test.vhd]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, Test.vhd]", 2, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("Test.vhd", 112, 343); // ch (w, cr)
+selectCodeEditor("Test.vhd", 179, 375); // ch (w, cr)
+selectCodeEditor("Test.vhd", 267, 381); // ch (w, cr)
+// Elapsed time: 17 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources]", 5); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, RAM.vhd]", 10, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, RAM.vhd]", 10, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, RAM.vhd]", 10, false, false, false, false, false, true); // B (F, cr) - Double Click
+// [GUI Memory]: 111 MB (+321kb) [00:12:07]
+selectCodeEditor("RAM.vhd", 293, 203); // ch (w, cr)
+selectCodeEditor("RAM.vhd", 11, 187, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ai (ao, Popup.HeavyWeightWindow)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Test.vhd", 1); // i (h, cr)
+selectCodeEditor("Test.vhd", 205, 148); // ch (w, cr)
+selectCodeEditor("Test.vhd", 250, 398); // ch (w, cr)
+selectCodeEditor("Test.vhd", 155, 393); // ch (w, cr)
+selectCodeEditor("Test.vhd", 104, 378); // ch (w, cr)
+// Elapsed time: 206 seconds
+selectCodeEditor("Test.vhd", 142, 431); // ch (w, cr)
+selectCodeEditor("Test.vhd", 124, 401); // ch (w, cr)
+// Elapsed time: 141 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 3); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd)]", 5); // B (F, cr)
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, Test.vhd]", 2, false); // B (F, cr)
+selectCodeEditor("Test.vhd", 247, 353); // ch (w, cr)
+selectCodeEditor("Test.vhd", 224, 454); // ch (w, cr)
+selectCodeEditor("Test.vhd", 42, 404); // ch (w, cr)
+selectCodeEditor("Test.vhd", 297, 400); // ch (w, cr)
+// Elapsed time: 14 seconds
+selectCodeEditor("Test.vhd", 104, 407); // ch (w, cr)
+selectCodeEditor("Test.vhd", 30, 417); // ch (w, cr)
+selectCodeEditor("Test.vhd", 33, 419); // ch (w, cr)
+selectCodeEditor("Test.vhd", 57, 396); // ch (w, cr)
+selectCodeEditor("Test.vhd", 287, 405); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RAM.vhd", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Test.vhd", 1); // i (h, cr)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RAM.vhd", 2); // i (h, cr)
+selectCodeEditor("RAM.vhd", 82, 39); // ch (w, cr)
+selectCodeEditor("RAM.vhd", 81, 54); // ch (w, cr)
+selectCodeEditor("RAM.vhd", 79, 73); // ch (w, cr)
+selectCodeEditor("RAM.vhd", 79, 97); // ch (w, cr)
+selectCodeEditor("RAM.vhd", 78, 114); // ch (w, cr)
+selectCodeEditor("RAM.vhd", 74, 126); // ch (w, cr)
+selectCodeEditor("RAM.vhd", 73, 144); // ch (w, cr)
+selectCodeEditor("RAM.vhd", 72, 159); // ch (w, cr)
+selectCodeEditor("RAM.vhd", 69, 179); // ch (w, cr)
+selectCodeEditor("RAM.vhd", 247, 138); // ch (w, cr)
+selectCodeEditor("RAM.vhd", 209, 446); // ch (w, cr)
+selectCodeEditor("RAM.vhd", 199, 289); // ch (w, cr)
+selectCodeEditor("RAM.vhd", 286, 173); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Test.vhd", 1); // i (h, cr)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (f, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RAM.vhd", 2); // i (h, cr)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (f, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd)]", 3, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, Test.vhd]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, Test.vhd]", 2, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, Test.vhd]", 2, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, Test.vhd]", 2, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cr)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cr)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cr)
+selectButton(PAResourceEtoH.FileSetPanel_MESSAGES, "2"); // h (f, cr)
+selectCodeEditor("Test.vhd", 189, 471); // ch (w, cr)
+// Elapsed time: 30 seconds
+selectCodeEditor("Test.vhd", 140, 515); // ch (w, cr)
+selectCodeEditor("Test.vhd", 75, 551); // ch (w, cr)
+// Elapsed time: 26 seconds
+selectCodeEditor("Test.vhd", 275, 435); // ch (w, cr)
+selectCodeEditor("Test.vhd", 269, 444); // ch (w, cr)
+// Elapsed time: 15 seconds
+selectCodeEditor("Test.vhd", 186, 567); // ch (w, cr)
+selectCodeEditor("Test.vhd", 135, 547); // ch (w, cr)
+// Elapsed time: 84 seconds
+selectCodeEditor("Test.vhd", 186, 458); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RAM.vhd", 2); // i (h, cr)
+selectCodeEditor("RAM.vhd", 372, 332); // ch (w, cr)
+// Elapsed time: 25 seconds
+selectCodeEditor("RAM.vhd", 345, 405); // ch (w, cr)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (f, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Test.vhd", 1); // i (h, cr)
+selectCodeEditor("Test.vhd", 207, 404); // ch (w, cr)
+selectCodeEditor("Test.vhd", 214, 433); // ch (w, cr)
+selectCodeEditor("Test.vhd", 148, 521); // ch (w, cr)
+selectCodeEditor("Test.vhd", 110, 558); // ch (w, cr)
+// Elapsed time: 208 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RAM.vhd", 2); // i (h, cr)
+selectCodeEditor("RAM.vhd", 252, 296); // ch (w, cr)
+selectCodeEditor("RAM.vhd", 85, 289, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ai (ao, Popup.HeavyWeightWindow)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Test.vhd", 1); // i (h, cr)
+typeControlKey((HResource) null, "Test.vhd", 'v'); // ch (w, cr)
+typeControlKey(null, null, 'z');
+selectCodeEditor("Test.vhd", 182, 436); // ch (w, cr)
+selectCodeEditor("Test.vhd", 326, 399); // ch (w, cr)
+typeControlKey((HResource) null, "Test.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("Test.vhd", 30, 552); // ch (w, cr)
+selectCodeEditor("Test.vhd", 211, 385); // ch (w, cr)
+selectCodeEditor("Test.vhd", 170, 429); // ch (w, cr)
+selectCodeEditor("Test.vhd", 224, 413); // ch (w, cr)
+selectCodeEditor("Test.vhd", 170, 418); // ch (w, cr)
+selectCodeEditor("Test.vhd", 172, 445); // ch (w, cr)
+// [GUI Memory]: 117 MB (+224kb) [00:28:03]
+// Elapsed time: 10 seconds
+selectCodeEditor("Test.vhd", 164, 420); // ch (w, cr)
+// Elapsed time: 41 seconds
+selectCodeEditor("Test.vhd", 134, 437); // ch (w, cr)
+selectCodeEditor("Test.vhd", 223, 422); // ch (w, cr)
+// Elapsed time: 104 seconds
+selectCodeEditor("Test.vhd", 204, 489); // ch (w, cr)
+selectCodeEditor("Test.vhd", 199, 518); // ch (w, cr)
+selectCodeEditor("Test.vhd", 150, 459); // ch (w, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 853 MB. GUI used memory: 55 MB. Current time: 5/1/20, 11:02:51 AM EDT
+selectCodeEditor("Test.vhd", 86, 460); // ch (w, cr)
+selectCodeEditor("Test.vhd", 87, 457); // ch (w, cr)
+// Elapsed time: 52 seconds
+selectCodeEditor("Test.vhd", 372, 509); // ch (w, cr)
+selectCodeEditor("Test.vhd", 62, 457); // ch (w, cr)
+selectCodeEditor("Test.vhd", 193, 396); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("Test.vhd", 4, 426); // ch (w, cr)
+selectCodeEditor("Test.vhd", 5, 421); // ch (w, cr)
+selectCodeEditor("Test.vhd", 95, 509); // ch (w, cr)
+// Elapsed time: 20 seconds
+selectCodeEditor("Test.vhd", 1, 518); // ch (w, cr)
+selectCodeEditor("Test.vhd", 44, 520); // ch (w, cr)
+// Elapsed time: 55 seconds
+selectCodeEditor("Test.vhd", 380, 534); // ch (w, cr)
+selectCodeEditor("Test.vhd", 357, 551); // ch (w, cr)
+selectCodeEditor("Test.vhd", 168, 433); // ch (w, cr)
+selectCodeEditor("Test.vhd", 160, 433); // ch (w, cr)
+selectCodeEditor("Test.vhd", 219, 458); // ch (w, cr)
+// Elapsed time: 11 seconds
+selectCodeEditor("Test.vhd", 105, 350); // ch (w, cr)
+selectCodeEditor("Test.vhd", 305, 326); // ch (w, cr)
+selectCodeEditor("Test.vhd", 160, 353); // ch (w, cr)
+selectCodeEditor("Test.vhd", 290, 327); // ch (w, cr)
+selectCodeEditor("Test.vhd", 273, 364); // ch (w, cr)
+selectCodeEditor("Test.vhd", 297, 517); // ch (w, cr)
+selectCodeEditor("Test.vhd", 115, 535); // ch (w, cr)
+// Elapsed time: 15 seconds
+selectCodeEditor("Test.vhd", 205, 540); // ch (w, cr)
+selectCodeEditor("Test.vhd", 140, 541); // ch (w, cr)
+selectCodeEditor("Test.vhd", 96, 556); // ch (w, cr)
+selectCodeEditor("Test.vhd", 131, 542); // ch (w, cr)
+selectCodeEditor("Test.vhd", 246, 553); // ch (w, cr)
+selectCodeEditor("Test.vhd", 109, 580); // ch (w, cr)
+// Elapsed time: 18 seconds
+selectCodeEditor("Test.vhd", 177, 572); // ch (w, cr)
+// Elapsed time: 64 seconds
+selectCodeEditor("Test.vhd", 202, 602); // ch (w, cr)
+// Elapsed time: 20 seconds
+selectCodeEditor("Test.vhd", 138, 588); // ch (w, cr)
+// Elapsed time: 60 seconds
+selectCodeEditor("Test.vhd", 252, 544); // ch (w, cr)
+selectCodeEditor("Test.vhd", 222, 580); // ch (w, cr)
+selectCodeEditor("Test.vhd", 227, 555); // ch (w, cr)
+// Elapsed time: 27 seconds
+selectCodeEditor("Test.vhd", 218, 554); // ch (w, cr)
+// Elapsed time: 135 seconds
+selectCodeEditor("Test.vhd", 170, 537); // ch (w, cr)
+selectCodeEditor("Test.vhd", 169, 581); // ch (w, cr)
+selectCodeEditor("Test.vhd", 93, 588, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ai (ao, Popup.HeavyWeightWindow)
+selectCodeEditor("Test.vhd", 167, 551); // ch (w, cr)
+selectCodeEditor("Test.vhd", 257, 570); // ch (w, cr)
+selectCodeEditor("Test.vhd", 153, 566); // ch (w, cr)
+selectCodeEditor("Test.vhd", 29, 554); // ch (w, cr)
+selectCodeEditor("Test.vhd", 38, 553); // ch (w, cr)
+selectCodeEditor("Test.vhd", 171, 553); // ch (w, cr)
+selectCodeEditor("Test.vhd", 173, 553); // ch (w, cr)
+selectCodeEditor("Test.vhd", 156, 569); // ch (w, cr)
+selectCodeEditor("Test.vhd", 141, 588); // ch (w, cr)
+selectCodeEditor("Test.vhd", 173, 589); // ch (w, cr)
+selectCodeEditor("Test.vhd", 154, 582); // ch (w, cr)
+selectCodeEditor("Test.vhd", 138, 586); // ch (w, cr)
+selectCodeEditor("Test.vhd", 173, 585); // ch (w, cr)
+selectCodeEditor("Test.vhd", 155, 585); // ch (w, cr)
+selectCodeEditor("Test.vhd", 140, 589); // ch (w, cr)
+selectCodeEditor("Test.vhd", 178, 586); // ch (w, cr)
+selectCodeEditor("Test.vhd", 189, 583); // ch (w, cr)
+selectCodeEditor("Test.vhd", 155, 573); // ch (w, cr)
+selectCodeEditor("Test.vhd", 24, 601); // ch (w, cr)
+selectCodeEditor("Test.vhd", 62, 572); // ch (w, cr)
+selectCodeEditor("Test.vhd", 142, 570); // ch (w, cr)
+selectCodeEditor("Test.vhd", 176, 588); // ch (w, cr)
+selectCodeEditor("Test.vhd", 156, 588); // ch (w, cr)
+selectCodeEditor("Test.vhd", 138, 589); // ch (w, cr)
+selectCodeEditor("Test.vhd", 172, 585); // ch (w, cr)
+selectCodeEditor("Test.vhd", 155, 588); // ch (w, cr)
+selectCodeEditor("Test.vhd", 139, 588); // ch (w, cr)
+selectCodeEditor("Test.vhd", 174, 586); // ch (w, cr)
+selectCodeEditor("Test.vhd", 149, 587); // ch (w, cr)
+selectCodeEditor("Test.vhd", 156, 586); // ch (w, cr)
+selectCodeEditor("Test.vhd", 230, 572); // ch (w, cr)
+selectCodeEditor("Test.vhd", 35, 230); // ch (w, cr)
+// Elapsed time: 38 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RAM.vhd", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Test.vhd", 1); // i (h, cr)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (f, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RAM.vhd", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Test.vhd", 1); // i (h, cr)
+selectCodeEditor("Test.vhd", 52, 591, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RAM.vhd", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Test.vhd", 1); // i (h, cr)
+selectCodeEditor("Test.vhd", 150, 360); // ch (w, cr)
+selectCodeEditor("Test.vhd", 171, 563); // ch (w, cr)
+selectCodeEditor("Test.vhd", 174, 564); // ch (w, cr)
+selectCodeEditor("Test.vhd", 209, 597); // ch (w, cr)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (f, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Test.vhd", 134, 608); // ch (w, cr)
+selectCodeEditor("Test.vhd", 115, 400, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ai (ao, Popup.HeavyWeightWindow)
+// Elapsed time: 103 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd), C : MMU(Behavioral) (MMU.vhd)]", 4, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd), C : MMU(Behavioral) (MMU.vhd)]", 4, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Block(Structural) (Top_Control_Block.vhd), C : MMU(Behavioral) (MMU.vhd)]", 4, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// Elapsed time: 347 seconds
+selectCodeEditor("MMU.vhd", 61, 254); // ch (w, cr)

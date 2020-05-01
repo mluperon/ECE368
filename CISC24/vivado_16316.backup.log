@@ -2,10 +2,10 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Fri May  1 10:31:42 2020
-# Process ID: 19576
+# Start of session at: Wed Apr 29 22:12:28 2020
+# Process ID: 16316
 # Current directory: C:/Users/Melan/Desktop/ECE368/CISC24
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5140 C:\Users\Melan\Desktop\ECE368\CISC24\CISC24.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15316 C:\Users\Melan\Desktop\ECE368\CISC24\CISC24.xpr
 # Log file: C:/Users/Melan/Desktop/ECE368/CISC24/vivado.log
 # Journal file: C:/Users/Melan/Desktop/ECE368/CISC24\vivado.jou
 #-----------------------------------------------------------
@@ -16,5 +16,7 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
-open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 869.473 ; gain = 268.191
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 944.492 ; gain = 67.082
 update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 29 23:22:36 2020...
